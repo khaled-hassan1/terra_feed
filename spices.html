@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Spices - TerraFeed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="fas fa-seedling me-2"></i>TerraFeed
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-translate="nav_home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="spices.html" data-translate="nav_spices">Our Spices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html" data-translate="nav_recipes">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" data-translate="nav_blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wholesale.html" data-translate="nav_wholesale">Wholesale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact" data-translate="nav_contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="language-switcher">
+                    <button class="btn btn-outline-primary btn-sm me-2" onclick="changeLanguage('en')">EN</button>
+                    <button class="btn btn-outline-primary btn-sm" onclick="changeLanguage('ar')">العربية</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold text-white mb-3" data-translate="spices_page_title">Our Premium Spices</h1>
+                    <p class="lead text-white" data-translate="spices_page_subtitle">Discover the world of flavors with our carefully selected spices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spice Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="spice-filters text-center">
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn active" data-filter="all" data-translate="filter_all">All Spices</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="whole" data-translate="filter_whole">Whole Spices</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ground" data-translate="filter_ground">Ground Spices</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="blends" data-translate="filter_blends">Spice Blends</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="herbs" data-translate="filter_herbs">Herbs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="spiceGrid">
+                <!-- Cardamom -->
+                <div class="col-lg-4 col-md-6 spice-item" data-category="whole">
+                    <div class="spice-card card h-100 shadow-sm">
+                        <img src="https://images.pexels.com/photos/4198043/pexels-photo-4198043.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Cardamom">
+                        <div class="card-body">
+                            <h5 class="card-title" data-translate="spice_cardamom_title">Green Cardamom</h5>
+                            <p class="spice-origin mb-2"><i class="fas fa-map-marker-alt text-primary me-1"></i><span data-translate="spice_cardamom_origin">Origin: India, Guatemala</span></p>
+                            <p class="card-text" data-translate="spice_cardamom_desc">Known as the "Queen of Spices," cardamom offers a sweet, floral aroma with hints of citrus and mint.</p>
+                            <div class="spice-details">
+                                <h6 data-translate="spice_uses">Uses:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_cardamom_use1">Desserts and sweets</li>
+                                    <li data-translate="spice_cardamom_use2">Tea and coffee</li>
+                                    <li data-translate="spice_cardamom_use3">Rice dishes</li>
+                                </ul>
+                                <h6 data-translate="spice_benefits">Health Benefits:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_cardamom_benefit1">Aids digestion</li>
+                                    <li data-translate="spice_cardamom_benefit2">Freshens breath</li>
+                                    <li data-translate="spice_cardamom_benefit3">Rich in antioxidants</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary mt-3" data-translate="learn_more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cinnamon -->
+                <div class="col-lg-4 col-md-6 spice-item" data-category="whole ground">
+                    <div class="spice-card card h-100 shadow-sm">
+                        <img src="https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Cinnamon">
+                        <div class="card-body">
+                            <h5 class="card-title" data-translate="spice_cinnamon_title">Ceylon Cinnamon</h5>
+                            <p class="spice-origin mb-2"><i class="fas fa-map-marker-alt text-primary me-1"></i><span data-translate="spice_cinnamon_origin">Origin: Sri Lanka</span></p>
+                            <p class="card-text" data-translate="spice_cinnamon_desc">True cinnamon with a delicate, sweet flavor and warm aroma, superior to common cassia.</p>
+                            <div class="spice-details">
+                                <h6 data-translate="spice_uses">Uses:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_cinnamon_use1">Baking and desserts</li>
+                                    <li data-translate="spice_cinnamon_use2">Hot beverages</li>
+                                    <li data-translate="spice_cinnamon_use3">Savory meat dishes</li>
+                                </ul>
+                                <h6 data-translate="spice_benefits">Health Benefits:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_cinnamon_benefit1">Regulates blood sugar</li>
+                                    <li data-translate="spice_cinnamon_benefit2">Anti-inflammatory</li>
+                                    <li data-translate="spice_cinnamon_benefit3">Boosts metabolism</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary mt-3" data-translate="learn_more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Turmeric -->
+                <div class="col-lg-4 col-md-6 spice-item" data-category="ground">
+                    <div class="spice-card card h-100 shadow-sm">
+                        <img src="https://images.pexels.com/photos/4198043/pexels-photo-4198043.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Turmeric">
+                        <div class="card-body">
+                            <h5 class="card-title" data-translate="spice_turmeric_title">Organic Turmeric</h5>
+                            <p class="spice-origin mb-2"><i class="fas fa-map-marker-alt text-primary me-1"></i><span data-translate="spice_turmeric_origin">Origin: India</span></p>
+                            <p class="card-text" data-translate="spice_turmeric_desc">Golden spice with earthy, slightly bitter taste and vibrant color, essential in many cuisines.</p>
+                            <div class="spice-details">
+                                <h6 data-translate="spice_uses">Uses:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_turmeric_use1">Curry dishes</li>
+                                    <li data-translate="spice_turmeric_use2">Golden milk</li>
+                                    <li data-translate="spice_turmeric_use3">Rice and lentils</li>
+                                </ul>
+                                <h6 data-translate="spice_benefits">Health Benefits:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_turmeric_benefit1">Powerful anti-inflammatory</li>
+                                    <li data-translate="spice_turmeric_benefit2">Supports joint health</li>
+                                    <li data-translate="spice_turmeric_benefit3">Boosts immunity</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary mt-3" data-translate="learn_more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Garam Masala -->
+                <div class="col-lg-4 col-md-6 spice-item" data-category="blends">
+                    <div class="spice-card card h-100 shadow-sm">
+                        <img src="https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Garam Masala">
+                        <div class="card-body">
+                            <h5 class="card-title" data-translate="spice_garam_title">Garam Masala Blend</h5>
+                            <p class="spice-origin mb-2"><i class="fas fa-map-marker-alt text-primary me-1"></i><span data-translate="spice_garam_origin">Origin: India</span></p>
+                            <p class="card-text" data-translate="spice_garam_desc">Aromatic blend of warming spices including cardamom, cinnamon, cloves, and black pepper.</p>
+                            <div class="spice-details">
+                                <h6 data-translate="spice_ingredients">Ingredients:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_garam_ing1">Cardamom, Cinnamon</li>
+                                    <li data-translate="spice_garam_ing2">Cloves, Black pepper</li>
+                                    <li data-translate="spice_garam_ing3">Cumin, Coriander</li>
+                                </ul>
+                                <h6 data-translate="spice_uses">Uses:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_garam_use1">Indian curries</li>
+                                    <li data-translate="spice_garam_use2">Meat marinades</li>
+                                    <li data-translate="spice_garam_use3">Vegetable dishes</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary mt-3" data-translate="learn_more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rosemary -->
+                <div class="col-lg-4 col-md-6 spice-item" data-category="herbs">
+                    <div class="spice-card card h-100 shadow-sm">
+                        <img src="https://images.pexels.com/photos/4198043/pexels-photo-4198043.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Rosemary">
+                        <div class="card-body">
+                            <h5 class="card-title" data-translate="spice_rosemary_title">Dried Rosemary</h5>
+                            <p class="spice-origin mb-2"><i class="fas fa-map-marker-alt text-primary me-1"></i><span data-translate="spice_rosemary_origin">Origin: Mediterranean</span></p>
+                            <p class="card-text" data-translate="spice_rosemary_desc">Fragrant herb with pine-like aroma and slightly bitter taste, perfect for Mediterranean cuisine.</p>
+                            <div class="spice-details">
+                                <h6 data-translate="spice_uses">Uses:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_rosemary_use1">Roasted meats</li>
+                                    <li data-translate="spice_rosemary_use2">Potatoes and vegetables</li>
+                                    <li data-translate="spice_rosemary_use3">Bread and focaccia</li>
+                                </ul>
+                                <h6 data-translate="spice_benefits">Health Benefits:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_rosemary_benefit1">Improves memory</li>
+                                    <li data-translate="spice_rosemary_benefit2">Rich in antioxidants</li>
+                                    <li data-translate="spice_rosemary_benefit3">Supports circulation</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary mt-3" data-translate="learn_more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saffron -->
+                <div class="col-lg-4 col-md-6 spice-item" data-category="whole">
+                    <div class="spice-card card h-100 shadow-sm">
+                        <img src="https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Saffron">
+                        <div class="card-body">
+                            <h5 class="card-title" data-translate="spice_saffron_title">Premium Saffron</h5>
+                            <p class="spice-origin mb-2"><i class="fas fa-map-marker-alt text-primary me-1"></i><span data-translate="spice_saffron_origin">Origin: Kashmir, Iran</span></p>
+                            <p class="card-text" data-translate="spice_saffron_desc">The world's most expensive spice, offering a unique honey-like fragrance and golden color.</p>
+                            <div class="spice-details">
+                                <h6 data-translate="spice_uses">Uses:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_saffron_use1">Paella and risotto</li>
+                                    <li data-translate="spice_saffron_use2">Persian rice dishes</li>
+                                    <li data-translate="spice_saffron_use3">Desserts and sweets</li>
+                                </ul>
+                                <h6 data-translate="spice_benefits">Health Benefits:</h6>
+                                <ul class="small">
+                                    <li data-translate="spice_saffron_benefit1">Mood enhancer</li>
+                                    <li data-translate="spice_saffron_benefit2">Supports eye health</li>
+                                    <li data-translate="spice_saffron_benefit3">Rich in antioxidants</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary mt-3" data-translate="learn_more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spice Care Tips -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-translate="spice_care_title">Spice Care & Storage Tips</h2>
+                <p class="lead" data-translate="spice_care_subtitle">Keep your spices fresh and flavorful</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="care-tip text-center p-4">
+                        <i class="fas fa-thermometer-half text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h5 data-translate="tip_temperature_title">Temperature Control</h5>
+                        <p data-translate="tip_temperature_desc">Store spices in a cool, dry place away from heat sources like stoves and direct sunlight.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="care-tip text-center p-4">
+                        <i class="fas fa-box text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h5 data-translate="tip_container_title">Proper Containers</h5>
+                        <p data-translate="tip_container_desc">Use airtight containers to prevent moisture and maintain freshness. Glass jars work best.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="care-tip text-center p-4">
+                        <i class="fas fa-calendar-alt text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h5 data-translate="tip_freshness_title">Check Freshness</h5>
+                        <p data-translate="tip_freshness_desc">Replace ground spices every 2-3 years and whole spices every 3-4 years for best flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-brand">
+                        <i class="fas fa-seedling me-2"></i>
+                        <span class="fw-bold">TerraFeed</span>
+                    </div>
+                    <p class="mt-2 mb-0" data-translate="footer_copyright">
+                        © 2025 TerraFeed. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/spices.js"></script>

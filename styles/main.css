@@ -1,0 +1,572 @@
+/* Custom CSS for TerraFeed Website */
+:root {
+    --primary-color: #8B4513;
+    --secondary-color: #D2691E;
+    --accent-color: #228B22;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --bg-light: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Typography */
+.section-title {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+/* Bootstrap overrides */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #654321;
+    border-color: #654321;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.language-switcher .btn {
+    border-radius: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(139, 69, 19, 0.7), rgba(139, 69, 19, 0.7)),
+                url('https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(139, 69, 19, 0.8);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image img {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-buttons .btn {
+    margin-bottom: 1rem;
+}
+
+/* Features Section */
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.feature-icon i {
+    font-size: 3rem;
+    color: var(--accent-color);
+}
+
+/* About Section */
+.about-content {
+    padding-left: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* Products Section */
+.product-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Contact Section */
+.contact-form-wrapper {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-info i {
+    font-size: 2.5rem;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+/* Footer */
+footer {
+    background: var(--text-dark) !important;
+}
+
+.footer-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.social-links a {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: var(--secondary-color) !important;
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .navbar-nav {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] .about-content {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+[dir="rtl"] .text-md-end {
+    text-align: right !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .about-content {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    
+    [dir="rtl"] .about-content {
+        padding-right: 0;
+    }
+    
+    .feature-icon i {
+        font-size: 2.5rem;
+    }
+    
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #654321;
+}
+
+/* Page Header Styles */
+.page-header {
+    background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(139, 69, 19, 0.8)),
+                url('https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+    padding: 120px 0 80px;
+    color: white;
+}
+
+/* Spices Page Styles */
+.spice-filters .filter-btn {
+    transition: all 0.3s ease;
+}
+
+.spice-filters .filter-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.spice-card {
+    transition: all 0.3s ease;
+}
+
+.spice-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.spice-origin {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.spice-details h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.spice-details ul {
+    margin-bottom: 0.5rem;
+}
+
+.care-tip {
+    background: white;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.care-tip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Recipe Page Styles */
+.recipe-filters .filter-btn {
+    transition: all 0.3s ease;
+}
+
+.recipe-filters .filter-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.recipe-card {
+    transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.recipe-meta .badge {
+    font-size: 0.8rem;
+}
+
+.recipe-spices .badge {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.recipe-rating {
+    color: #ffc107;
+    font-size: 1.1rem;
+}
+
+.favorite-btn {
+    border: none;
+    background: transparent;
+    color: #dc3545;
+    transition: all 0.3s ease;
+}
+
+.favorite-btn:hover,
+.favorite-btn.active {
+    background-color: #dc3545;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Blog Page Styles */
+.featured-post {
+    border: 2px solid var(--primary-color);
+}
+
+.blog-card {
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.blog-meta {
+    border-top: 1px solid #e9ecef;
+    padding-top: 1rem;
+}
+
+/* Wholesale Page Styles */
+.wholesale-benefit {
+    background: white;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.wholesale-benefit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.wholesale-category {
+    transition: all 0.3s ease;
+}
+
+.wholesale-category:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card {
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.pricing-discount {
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.wholesale-contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.volume-calculator {
+    border: 1px solid #dee2e6;
+}
+
+/* Map Styles */
+.map-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#map {
+    min-height: 400px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 100px 0 60px;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .spice-filters .filter-btn,
+    .recipe-filters .filter-btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .wholesale-contact-form,
+    .map-container {
+        padding: 1.5rem;
+    }
+    
+    .volume-calculator {
+        padding: 1rem;
+    }
+    
+    .pricing-card .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.4s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .btn,
+    .modal-footer {
+        display: none !important;
+    }
+    
+    .modal-body {
+        padding: 0;
+    }
+    
+    .page-header {
+        background: none;
+        color: black;
+        padding: 20px 0;
+    }
+}
