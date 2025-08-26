@@ -3,7 +3,7 @@ const translations = {
   en: {
     // Name Site
     site_title: "TerraFeed - High-Quality Natural Seasoning",
-    
+
     // Navigation
     nav_home: "Home",
     nav_about: "About",
@@ -41,8 +41,27 @@ const translations = {
       "Our journey began with a simple mission: to connect kitchens around the world with the finest spices while supporting farming communities that preserve ancient cultivation methods. From expanding from a small garage to over 500,000 square-foot of Distribution and Production Facility, TerraFeed is now a Global and Nationwide Company that is a leader in the spice category. While sourcing for raw material is around the globe, Corporate Headquarters, Production, and Distribution Facilities are all located in South Florida.",
     about_desc3:
       "Currently, we offer a wide variety of products for every need in every size, from take-out packets to pails and industrial sizes. Our categories include Spices & Herbs, Seasoning Blends, Olive Oils, Beverages, Hot Sauces, Teas, Marinades & Dressings, Organic & Healthy items, Side Dishes, and Soup Bases. We are committed to quality and sustainability in every product we deliver.",
+    
+    // NEW About page content
+    about_page_subheader: "Discover our story, mission, and commitment to premium quality spices",
+    our_history_title: "Our History",
+    our_history_desc: "Over 50 years of dedication to bringing authentic flavors from around the world to your kitchen.",
+    our_mission_title: "Our Mission",
+    our_mission_desc: "To connect kitchens worldwide with premium spices while supporting sustainable farming communities.",
+    our_vision_title: "Our Vision",
+    our_vision_desc: "To be the global leader in premium spices, setting standards for quality and sustainability.",
+    our_values_title: "Our Values",
+    value_sustainability_title: "Sustainability",
+    value_sustainability_desc: "We are committed to environmentally responsible sourcing and supporting sustainable farming practices.",
+    value_quality_title: "Quality Excellence",
+    value_quality_desc: "Every product undergoes rigorous quality control to ensure only the finest spices reach our customers.",
+    value_partnership_title: "Fair Partnerships",
+    value_partnership_desc: "We build lasting relationships with farmers and suppliers based on fairness and mutual respect.",
+    value_community_title: "Community Focus",
+    value_community_desc: "We support the communities where we source our spices, contributing to their growth and prosperity.",
+
     // Products Section (Standardized)
-    view_all_products:"View All Products",
+    view_all_products: "View All Products",
     products_title: "Our Premium Collection",
     products_subtitle:
       "Discover our carefully curated selection of premium spices",
@@ -113,6 +132,8 @@ const translations = {
     contact_address: "123 Spice Street<br>Flavor District, FD 12345",
     contact_phone_title: "Call Us",
     contact_email_title: "Email Us",
+    contact_hero_subtitle: "Ready to elevate your culinary experience? We'd love to hear from you.",
+
 
     // Form
     form_name: "Name",
@@ -120,6 +141,10 @@ const translations = {
     form_subject: "Subject",
     form_message: "Message",
     form_submit: "Send Message",
+
+    // CTA Section
+    ready_to_explore: "Ready to Explore Our Premium Spices?",
+    discover_collection: "Discover our carefully curated collection of premium spices from around the world.",
 
     // Footer
     footer_copyright: "© 2025 TerraFeed. All rights reserved.",
@@ -294,8 +319,27 @@ const translations = {
       "بدأت رحلتنا بمهمة بسيطة: ربط المطابخ حول العالم بأجود التوابل مع دعم المجتمعات الزراعية التي تحافظ على أساليب الزراعة القديمة. من التوسع من مرآب صغير إلى منشأة توزيع وإنتاج تزيد مساحتها عن 500,000 قدم مربع، أصبحت تيرافيد الآن شركة عالمية ورائدة على مستوى البلاد في فئة التوابل. بينما يتم توريد المواد الخام من جميع أنحاء العالم، تقع المقرات الرئيسية للشركة ومرافق الإنتاج والتوزيع كلها في جنوب فلوريدا.",
     about_desc3:
       "نقدم حاليًا مجموعة واسعة من المنتجات لتلبية كل الاحتياجات وبجميع الأحجام، من عبوات الوجبات الجاهزة إلى الدلاء والأحجام الصناعية. تشمل فئات منتجاتنا التوابل والأعشاب، خلطات التوابل، زيوت الزيتون، المشروبات، الصلصات الحارة، الشاي، التتبيلات والصلصات، المنتجات العضوية والصحية، الأطباق الجانبية، وقواعد الحساء. نحن ملتزمون بالجودة والاستدامة في كل منتج نقدمه.",
+    
+    // NEW About page content
+    about_page_subheader: "اكتشف قصتنا، مهمتنا، والتزامنا بجودة التوابل الفاخرة",
+    our_history_title: "تاريخنا",
+    our_history_desc: "أكثر من 50 عامًا من التفاني في جلب النكهات الأصيلة من جميع أنحاء العالم إلى مطبخك.",
+    our_mission_title: "مهمتنا",
+    our_mission_desc: "ربط المطابخ حول العالم بالتوابل الفاخرة مع دعم المجتمعات الزراعية المستدامة.",
+    our_vision_title: "رؤيتنا",
+    our_vision_desc: "أن نكون الشركة الرائدة عالميًا في التوابل الفاخرة، وأن نضع معايير للجودة والاستدامة.",
+    our_values_title: "قيمنا",
+    value_sustainability_title: "الاستدامة",
+    value_sustainability_desc: "نحن ملتزمون بالمصادر المسؤولة بيئيًا ودعم ممارسات الزراعة المستدامة.",
+    value_quality_title: "تميز الجودة",
+    value_quality_desc: "يخضع كل منتج لمراقبة جودة صارمة لضمان وصول أجود التوابل إلى عملائنا.",
+    value_partnership_title: "شراكات عادلة",
+    value_partnership_desc: "نبني علاقات دائمة مع المزارعين والموردين على أساس العدالة والاحترام المتبادل.",
+    value_community_title: "التركيز على المجتمع",
+    value_community_desc: "ندعم المجتمعات التي نستورد منها توابلنا، مما يساهم في نموها وازدهارها.",
+
     // Products Section (Standardized)
-    view_all_products:"عرض جميع المنتجات",
+    view_all_products: "عرض جميع المنتجات",
     products_title: "مجموعتنا الفاخرة",
     products_subtitle: "اكتشف مجموعتنا المختارة بعناية من التوابل الفاخرة",
     product_exotic_title: "توابل غريبة",
@@ -364,6 +408,8 @@ const translations = {
     contact_address: "١٢٣ شارع التوابل<br>منطقة النكهات، ن ن ١٢٣٤٥",
     contact_phone_title: "اتصل بنا",
     contact_email_title: "راسلنا",
+    contact_hero_subtitle: "على استعداد لرفع تجربتك في الطهي؟ يسعدنا أن نسمع منك.",
+
 
     // Form
     form_name: "الاسم",
@@ -371,6 +417,10 @@ const translations = {
     form_subject: "الموضوع",
     form_message: "الرسالة",
     form_submit: "إرسال الرسالة",
+
+    // CTA Section
+    ready_to_explore: "هل أنت مستعد لاستكشاف توابلنا الفاخرة؟",
+    discover_collection: "اكتشف مجموعتنا المختارة بعناية من التوابل الفاخرة من جميع أنحاء العالم.",
 
     // Footer
     footer_copyright: "© ٢٠٢٥ تيرافيد. جميع الحقوق محفوظة.",
