@@ -1,124 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-translate="site_title">
-      TerraFeed - توابل طبيعية عالية الجودة
-    </title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="styles/main.css" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
-    >
-      <div class="container">
-        <a class="navbar-brand fw-bold text-primary" href="#home">
-          <i class="fas fa-seedling me-2"></i>TerraFeed
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-translate="site_title">
+    TerraFeed - توابل طبيعية عالية الجودة
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="styles/main.css" rel="stylesheet" />
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto me-3">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home" data-translate="nav_home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html" data-translate="nav_about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html" data-translate="nav_products"
-                >Products</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html" data-translate="nav_contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#home">
+        <i class="fas fa-seedling me-2"></i>TerraFeed
+      </a>
 
-          <div class="language-switcher">
-            <button
-              class="btn btn-outline-primary btn-sm me-2"
-              onclick="changeLanguage('en')"
-            >
-              EN
-            </button>
-            <button
-              class="btn btn-outline-primary btn-sm"
-              onclick="changeLanguage('ar')"
-            >
-              العربية
-            </button>
-          </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" data-translate="nav_home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" data-translate="nav_about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html" data-translate="nav_products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" data-translate="nav_contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="language-switcher">
+          <button class="btn btn-outline-primary btn-sm me-2" onclick="changeLanguage('en')">
+            EN
+          </button>
+          <button class="btn btn-outline-primary btn-sm" onclick="changeLanguage('ar')">
+            العربية
+          </button>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section id="home" class="hero-section">
-        <!-- Hero Overlay -->
-        <div class="hero-overlay"></div>
+  <section id="home" class="hero-section">
+    <!-- Hero Overlay -->
+    <div class="hero-overlay"></div>
 
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <!-- Text Content Column -->
-                <!-- Order is set up for LTR: Text (order-2) on left, Image (order-1) on right -->
-                <!-- For RTL, Bootstrap's order classes will automatically reverse when dir="rtl" is applied to <html> -->
-                <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1">
-                    <div class="hero-content text-white text-center text-lg-start">
-                        <h1 class="display-4 fw-bold mb-4 text-white" data-translate="hero_title">
-                            Premium Spices from Nature's Garden
-                        </h1>
-                        <!-- fw-semibold for slightly less bold than fw-bold -->
-                        <p class="lead mb-4 text-white fw-semibold" data-translate="hero_subtitle">
-                            Discover the finest selection of organic spices and natural ingredients sourced directly from trusted farmers worldwide.
-                        </p>
-                        <div class="hero-buttons d-flex flex-column flex-md-row justify-content-center justify-content-lg-start gap-3">
-                            <a href="#products" class="btn btn-primary btn-lg" data-translate="hero_cta_primary">
-                                Explore Products
-                            </a>
-                            <a href="#contact" class="btn btn-outline-light btn-lg" data-translate="hero_cta_secondary">
-                                Get In Touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <!-- Text Content Column -->
+        <!-- Order is set up for LTR: Text (order-2) on left, Image (order-1) on right -->
+        <!-- For RTL, Bootstrap's order classes will automatically reverse when dir="rtl" is applied to <html> -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1">
+          <div class="hero-content text-white text-center text-lg-start">
+            <h1 class="display-4 fw-bold mb-4 text-white" data-translate="hero_title">
+              Premium Spices from Nature's Garden
+            </h1>
+            <!-- fw-semibold for slightly less bold than fw-bold -->
+            <p class="lead mb-4 text-white fw-semibold" data-translate="hero_subtitle">
+              Discover the finest selection of organic spices and natural ingredients sourced directly from trusted
+              farmers worldwide.
+            </p>
+            <div
+              class="hero-buttons d-flex flex-column flex-md-row justify-content-center justify-content-lg-start gap-3">
+              <a href="#products" class="btn btn-primary btn-lg" data-translate="hero_cta_primary">
+                Explore Products
+              </a>
+              <a href="#contact" class="btn btn-outline-light btn-lg" data-translate="hero_cta_secondary">
+                Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
 
-                <!-- Image Column (removed image source as it was commented out in your snippet) -->
-                <div class="col-lg-6 d-flex justify-content-center align-items-center order-1 order-lg-2 mb-4 mb-lg-0">
-                    <!-- The image div was commented out in your provided HTML.
+        <!-- Image Column (removed image source as it was commented out in your snippet) -->
+        <div class="col-lg-6 d-flex justify-content-center align-items-center order-1 order-lg-2 mb-4 mb-lg-0">
+          <!-- The image div was commented out in your provided HTML.
                          If you want to re-include an image here, uncomment and add a valid src.
                     <div class="hero-image">
                         <img
@@ -128,406 +99,323 @@
                         />
                     </div>
                     -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="feature-card text-center p-4">
-              <div class="feature-icon mb-3">
-                <i class="fas fa-leaf text-primary"></i>
-              </div>
-              <h5 data-translate="feature_organic_title">100% Organic</h5>
-              <p data-translate="feature_organic_desc">
-                Certified organic spices without any harmful chemicals or
-                pesticides.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="feature-card text-center p-4">
-              <div class="feature-icon mb-3">
-                <i class="fas fa-globe text-primary"></i>
-              </div>
-              <h5 data-translate="feature_global_title">Global Sourcing</h5>
-              <p data-translate="feature_global_desc">
-                Direct partnerships with farmers from around the world for
-                authentic flavors.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="feature-card text-center p-4">
-              <div class="feature-icon mb-3">
-                <i class="fas fa-award text-primary"></i>
-              </div>
-              <h5 data-translate="feature_quality_title">Premium Quality</h5>
-              <p data-translate="feature_quality_desc">
-                Rigorous quality control ensures only the finest spices reach
-                your kitchen.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
-
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img
-              src="img/2148377558.jpg"
-              alt="Spice cultivation"
-              class="img-fluid rounded shadow"
-            />
-          </div>
-          <div class="col-lg-6">
-            <div class="about-content">
-              <h2 class="section-title mb-4" data-translate="about_title">
-                About TerraFeed
-              </h2>
-              <p class="mb-4" data-translate="about_desc1">
-                TerraFeed was born from a passion for authentic flavors and
-                sustainable agriculture. We believe that the best spices come
-                from the earth, nurtured by farmers who understand the delicate
-                balance between tradition and innovation. Our humble start began
-                more than 50 years ago, founded by a visionary who aimed to
-                bring the finest spices to every home.
-              </p>
-              <p class="mb-4" data-translate="about_desc2">
-                Our journey began with a simple mission: to connect kitchens
-                around the world with the finest spices while supporting farming
-                communities that preserve ancient cultivation methods. From
-                expanding from a small garage to over 500,000 square-foot of
-                Distribution and Production Facility, TerraFeed is now a Global
-                and Nationwide Company that is a leader in the spice category.
-                While sourcing for raw material is around the globe, Corporate
-                Headquarters, Production, and Distribution Facilities are all
-                located in South Florida.
-              </p>
-              <p class="mb-4" data-translate="about_desc3">
-                Currently, we offer a wide variety of products for every need in
-                every size, from take-out packets to pails and industrial sizes.
-                Our categories include Spices & Herbs, Seasoning Blends, Olive
-                Oils, Beverages, Hot Sauces, Teas, Marinades & Dressings,
-                Organic & Healthy items, Side Dishes, and Soup Bases. We are
-                committed to quality and sustainability in every product we
-                deliver.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<section id="products" class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title" data-translate="products_title">
-                Our Premium Collection
-            </h2>
-            <p class="lead" data-translate="products_subtitle">
-                Discover our carefully curated selection of premium spices
-            </p>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card card h-100 shadow-sm">
-                    <img
-                        src="img/exotic-spices.jpg"
-                        class="card-img-top"
-                        alt="Exotic Spices"
-                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/F0F0F0/333333?text=Exotic+Spices';"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title" data-translate="product_exotic_title">
-                            Exotic Spices
-                        </h5>
-                        <p class="card-text" data-translate="product_exotic_desc">
-                            Rare and exotic spices from remote regions, perfect for
-                            adventurous cooking.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card card h-100 shadow-sm">
-                    <img
-                        src="img\asian-spice-blends.webp"
-                        class="card-img-top"
-                        alt="Asian Spice Blends"
-                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/D0D0D0/111111?text=Asian+Blends';"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title" data-translate="product_asian_title">
-                            Asian Spice Blends
-                        </h5>
-                        <p class="card-text" data-translate="product_asian_desc">
-                            Traditional spice blends from across Asia, crafted using
-                            ancient recipes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card card h-100 shadow-sm">
-                    <img
-                        src="img\curry.jpg"
-                        class="card-img-top"
-                        alt="Curry Powder"
-                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/F0F0F0/333333?text=Curry+Powder';"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title" data-translate="curry_title">
-                            Curry Powder
-                        </h5>
-                        <p class="card-text" data-translate="curry_description">
-                            A versatile blend of aromatic spices like turmeric, coriander,
-                            and cumin. It's the cornerstone of many Indian, Thai, and
-                            Caribbean dishes, providing a warm, complex flavor profile.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card card h-100 shadow-sm">
-                    <img
-                        src="img\seafood.jpg"
-                        class="card-img-top"
-                        alt="Seafood Seasoning"
-                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/E0E0E0/222222?text=Seafood+Seasoning';"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title" data-translate="seafood_seasoning_title">
-                            Seafood Seasoning
-                        </h5>
-                        <p
-                            class="card-text"
-                            data-translate="seafood_seasoning_description"
-                        >
-                            A zesty, peppery blend typically featuring celery seed,
-                            paprika, salt, and red pepper. It adds a signature bold flavor
-                            to shrimp, crab, fish, and other seafood.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card card h-100 shadow-sm">
-                    <img
-                        src="img\cumin.jpg"
-                        class="card-img-top"
-                        alt="Cumin"
-                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/D0D0D0/111111?text=Cumin';"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title" data-translate="cumin_title">Cumin</h5>
-                        <p class="card-text" data-translate="cumin_description">
-                            A warm, earthy spice with a slightly bitter, peppery taste.
-                            Cumin is a key ingredient in Mexican, Middle Eastern, and
-                            Indian cuisines, essential for chili and taco blends.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="product-card card h-100 shadow-sm">
-                    <img
-                        src="img\paprika.jpg"
-                        class="card-img-top"
-                        alt="Paprika"
-                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/C0C0C0/000000?text=Paprika';"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title" data-translate="paprika_title">
-                            Paprika
-                        </h5>
-                        <p class="card-text" data-translate="paprika_description">
-                            Made from ground red peppers, paprika ranges from sweet and
-                            mild to hot and smoky. It adds vibrant color and a gentle,
-                            sweet flavor to roasted meats, stews, and sauces.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-12 text-center mt-5">
-                <a href="products.html" class="btn btn-primary btn-lg" data-translate="view_all_products">View All Products</a>
-            </div>
-        </div>
     </div>
-</section>
+  </section>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card text-center p-4">
+            <div class="feature-icon mb-3">
+              <i class="fas fa-leaf text-primary"></i>
+            </div>
+            <h5 data-translate="feature_organic_title">100% Organic</h5>
+            <p data-translate="feature_organic_desc">
+              Certified organic spices without any harmful chemicals or
+              pesticides.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card text-center p-4">
+            <div class="feature-icon mb-3">
+              <i class="fas fa-globe text-primary"></i>
+            </div>
+            <h5 data-translate="feature_global_title">Global Sourcing</h5>
+            <p data-translate="feature_global_desc">
+              Direct partnerships with farmers from around the world for
+              authentic flavors.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card text-center p-4">
+            <div class="feature-icon mb-3">
+              <i class="fas fa-award text-primary"></i>
+            </div>
+            <h5 data-translate="feature_quality_title">Premium Quality</h5>
+            <p data-translate="feature_quality_desc">
+              Rigorous quality control ensures only the finest spices reach
+              your kitchen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title" data-translate="contact_title">
-            Get In Touch
-          </h2>
-          <p class="lead" data-translate="contact_subtitle">
-            Ready to elevate your culinary experience?
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="img/2148377558.jpg" alt="Spice cultivation" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-lg-6">
+          <div class="about-content">
+            <h2 class="section-title mb-4" data-translate="about_title">
+              About TerraFeed
+            </h2>
+            <p class="mb-4" data-translate="about_desc1">
+              TerraFeed was born from a passion for authentic flavors and
+              sustainable agriculture. We believe that the best spices come
+              from the earth, nurtured by farmers who understand the delicate
+              balance between tradition and innovation. Our humble start began
+              more than 50 years ago, founded by a visionary who aimed to
+              bring the finest spices to every home.
+            </p>
+            <p class="mb-4" data-translate="about_desc2">
+              Our journey began with a simple mission: to connect kitchens
+              around the world with the finest spices while supporting farming
+              communities that preserve ancient cultivation methods. From
+              expanding from a small garage to over 500,000 square-foot of
+              Distribution and Production Facility, TerraFeed is now a Global
+              and Nationwide Company that is a leader in the spice category.
+              While sourcing for raw material is around the globe, Corporate
+              Headquarters, Production, and Distribution Facilities are all
+              located in South Florida.
+            </p>
+            <p class="mb-4" data-translate="about_desc3">
+              Currently, we offer a wide variety of products for every need in
+              every size, from take-out packets to pails and industrial sizes.
+              Our categories include Spices & Herbs, Seasoning Blends, Olive
+              Oils, Beverages, Hot Sauces, Teas, Marinades & Dressings,
+              Organic & Healthy items, Side Dishes, and Soup Bases. We are
+              committed to quality and sustainability in every product we
+              deliver.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="products" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title" data-translate="products_title">
+          Our Premium Collection
+        </h2>
+        <p class="lead" data-translate="products_subtitle">
+          Discover our carefully curated selection of premium spices
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card card h-100 shadow-sm">
+            <img src="img/exotic-spices.jpg" class="card-img-top" alt="Exotic Spices"
+              onerror="this.onerror=null;this.src='https://placehold.co/400x200/F0F0F0/333333?text=Exotic+Spices';" />
+            <div class="card-body">
+              <h5 class="card-title" data-translate="product_exotic_title">
+                Exotic Spices
+              </h5>
+              <p class="card-text" data-translate="product_exotic_desc">
+                Rare and exotic spices from remote regions, perfect for
+                adventurous cooking.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card card h-100 shadow-sm">
+            <img src="img\asian-spice-blends.webp" class="card-img-top" alt="Asian Spice Blends"
+              onerror="this.onerror=null;this.src='https://placehold.co/400x200/D0D0D0/111111?text=Asian+Blends';" />
+            <div class="card-body">
+              <h5 class="card-title" data-translate="product_asian_title">
+                Asian Spice Blends
+              </h5>
+              <p class="card-text" data-translate="product_asian_desc">
+                Traditional spice blends from across Asia, crafted using
+                ancient recipes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card card h-100 shadow-sm">
+            <img src="img\curry.jpg" class="card-img-top" alt="Curry Powder"
+              onerror="this.onerror=null;this.src='https://placehold.co/400x200/F0F0F0/333333?text=Curry+Powder';" />
+            <div class="card-body">
+              <h5 class="card-title" data-translate="curry_title">
+                Curry Powder
+              </h5>
+              <p class="card-text" data-translate="curry_description">
+                A versatile blend of aromatic spices like turmeric, coriander,
+                and cumin. It's the cornerstone of many Indian, Thai, and
+                Caribbean dishes, providing a warm, complex flavor profile.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card card h-100 shadow-sm">
+            <img src="img\seafood.jpg" class="card-img-top" alt="Seafood Seasoning"
+              onerror="this.onerror=null;this.src='https://placehold.co/400x200/E0E0E0/222222?text=Seafood+Seasoning';" />
+            <div class="card-body">
+              <h5 class="card-title" data-translate="seafood_seasoning_title">
+                Seafood Seasoning
+              </h5>
+              <p class="card-text" data-translate="seafood_seasoning_description">
+                A zesty, peppery blend typically featuring celery seed,
+                paprika, salt, and red pepper. It adds a signature bold flavor
+                to shrimp, crab, fish, and other seafood.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card card h-100 shadow-sm">
+            <img src="img\cumin.jpg" class="card-img-top" alt="Cumin"
+              onerror="this.onerror=null;this.src='https://placehold.co/400x200/D0D0D0/111111?text=Cumin';" />
+            <div class="card-body">
+              <h5 class="card-title" data-translate="cumin_title">Cumin</h5>
+              <p class="card-text" data-translate="cumin_description">
+                A warm, earthy spice with a slightly bitter, peppery taste.
+                Cumin is a key ingredient in Mexican, Middle Eastern, and
+                Indian cuisines, essential for chili and taco blends.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card card h-100 shadow-sm">
+            <img src="img\paprika.jpg" class="card-img-top" alt="Paprika"
+              onerror="this.onerror=null;this.src='https://placehold.co/400x200/C0C0C0/000000?text=Paprika';" />
+            <div class="card-body">
+              <h5 class="card-title" data-translate="paprika_title">
+                Paprika
+              </h5>
+              <p class="card-text" data-translate="paprika_description">
+                Made from ground red peppers, paprika ranges from sweet and
+                mild to hot and smoky. It adds vibrant color and a gentle,
+                sweet flavor to roasted meats, stews, and sauces.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center mt-5">
+          <a href="products.html" class="btn btn-primary btn-lg" data-translate="view_all_products">View All
+            Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title" data-translate="contact_title">
+          Get In Touch
+        </h2>
+        <p class="lead" data-translate="contact_subtitle">
+          Ready to elevate your culinary experience?
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label" data-translate="form_name">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label" data-translate="form_email">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label" data-translate="form_subject">Subject</label>
+                <input type="text" class="form-control" id="subject" required />
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label" data-translate="form_message">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg" data-translate="form_submit">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4 text-center mb-4">
+          <div class="contact-info">
+            <i class="fas fa-map-marker-alt text-primary mb-3"></i>
+            <h5 data-translate="contact_address_title">Our Location</h5>
+            <p data-translate="contact_address">
+              123 Spice Street<br />Flavor District, FD 12345
+            </p>
+            <button class="btn btn-outline-primary btn-sm mt-2" onclick="openMap()" data-translate="view_map">
+              View on Map
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <div class="contact-info">
+            <i class="fas fa-phone text-primary mb-3"></i>
+            <h5 data-translate="contact_phone_title">Call Us</h5>
+            <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <div class="contact-info">
+            <i class="fas fa-envelope text-primary mb-3"></i>
+            <h5 data-translate="contact_email_title">Email Us</h5>
+            <p>info@terrafeed.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="map-container">
+            <h4 class="text-center mb-4" data-translate="find_us">Find Us</h4>
+            <div id="map" style="height: 400px; border-radius: 15px; overflow: hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="footer-brand">
+            <i class="fas fa-seedling me-2"></i>
+            <span class="fw-bold">TerraFeed</span>
+          </div>
+          <p class="mt-2 mb-0 text-light" data-translate="footer_copyright">
+            © 2025 TerraFeed. All rights reserved.
           </p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="contact-form-wrapper">
-              <form id="contactForm" class="row g-3">
-                <div class="col-md-6">
-                  <label
-                    for="name"
-                    class="form-label"
-                    data-translate="form_name"
-                    >Name</label
-                  >
-                  <input type="text" class="form-control" id="name" required />
-                </div>
-                <div class="col-md-6">
-                  <label
-                    for="email"
-                    class="form-label"
-                    data-translate="form_email"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="col-12">
-                  <label
-                    for="subject"
-                    class="form-label"
-                    data-translate="form_subject"
-                    >Subject</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    required
-                  />
-                </div>
-                <div class="col-12">
-                  <label
-                    for="message"
-                    class="form-label"
-                    data-translate="form_message"
-                    >Message</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    rows="5"
-                    required
-                  ></textarea>
-                </div>
-                <div class="col-12 text-center">
-                  <button
-                    type="submit"
-                    class="btn btn-primary btn-lg"
-                    data-translate="form_submit"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-md-4 text-center mb-4">
-            <div class="contact-info">
-              <i class="fas fa-map-marker-alt text-primary mb-3"></i>
-              <h5 data-translate="contact_address_title">Our Location</h5>
-              <p data-translate="contact_address">
-                123 Spice Street<br />Flavor District, FD 12345
-              </p>
-              <button
-                class="btn btn-outline-primary btn-sm mt-2"
-                onclick="openMap()"
-                data-translate="view_map"
-              >
-                View on Map
-              </button>
-            </div>
-          </div>
-          <div class="col-md-4 text-center mb-4">
-            <div class="contact-info">
-              <i class="fas fa-phone text-primary mb-3"></i>
-              <h5 data-translate="contact_phone_title">Call Us</h5>
-              <p>+1 (555) 123-4567</p>
-            </div>
-          </div>
-          <div class="col-md-4 text-center mb-4">
-            <div class="contact-info">
-              <i class="fas fa-envelope text-primary mb-3"></i>
-              <h5 data-translate="contact_email_title">Email Us</h5>
-              <p>info@terrafeed.com</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12">
-            <div class="map-container">
-              <h4 class="text-center mb-4" data-translate="find_us">Find Us</h4>
-              <div
-                id="map"
-                style="height: 400px; border-radius: 15px; overflow: hidden"
-              ></div>
-            </div>
+        <div class="col-md-6 text-md-end">
+          <div class="social-links">
+            <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer class="bg-dark text-light py-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="footer-brand">
-              <i class="fas fa-seedling me-2"></i>
-              <span class="fw-bold">TerraFeed</span>
-            </div>
-            <p class="mt-2 mb-0 text-light" data-translate="footer_copyright">
-              © 2025 TerraFeed. All rights reserved.
-            </p>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <div class="social-links">
-              <a href="#" class="text-light me-3"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-light me-3"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="text-light me-3"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-light"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/translations.js"></script>
-    <script src="js/main.js"></script>
-  </body>
 </html>

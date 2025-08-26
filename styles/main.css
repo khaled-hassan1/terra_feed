@@ -130,7 +130,7 @@ p {
 /* Hero Section */
 .hero-section {
   background-image: url("../img/2148377557-ar.jpg");
-  
+
   background-size: cover;
   background-position: center;
   color: white;
@@ -140,9 +140,12 @@ p {
   align-items: center;
   overflow: hidden;
 }
+
 html[dir="rtl"] .hero-section {
-  background-image: url("../img/2148377557.jpg"); /* Image for RTL */
+  background-image: url("../img/2148377557.jpg");
+  /* Image for RTL */
 }
+
 .bg-products {
   background-image: url("../img/429.jpg");
   background-size: cover;
