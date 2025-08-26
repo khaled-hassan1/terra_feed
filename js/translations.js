@@ -43,22 +43,30 @@ const translations = {
       "Currently, we offer a wide variety of products for every need in every size, from take-out packets to pails and industrial sizes. Our categories include Spices & Herbs, Seasoning Blends, Olive Oils, Beverages, Hot Sauces, Teas, Marinades & Dressings, Organic & Healthy items, Side Dishes, and Soup Bases. We are committed to quality and sustainability in every product we deliver.",
 
     // NEW About page content
-    about_page_subheader: "Discover our story, mission, and commitment to premium quality spices",
+    about_page_subheader:
+      "Discover our story, mission, and commitment to premium quality spices",
     our_history_title: "Our History",
-    our_history_desc: "Over 50 years of dedication to bringing authentic flavors from around the world to your kitchen.",
+    our_history_desc:
+      "Over 50 years of dedication to bringing authentic flavors from around the world to your kitchen.",
     our_mission_title: "Our Mission",
-    our_mission_desc: "To connect kitchens worldwide with premium spices while supporting sustainable farming communities.",
+    our_mission_desc:
+      "To connect kitchens worldwide with premium spices while supporting sustainable farming communities.",
     our_vision_title: "Our Vision",
-    our_vision_desc: "To be the global leader in premium spices, setting standards for quality and sustainability.",
+    our_vision_desc:
+      "To be the global leader in premium spices, setting standards for quality and sustainability.",
     our_values_title: "Our Values",
     value_sustainability_title: "Sustainability",
-    value_sustainability_desc: "We are committed to environmentally responsible sourcing and supporting sustainable farming practices.",
+    value_sustainability_desc:
+      "We are committed to environmentally responsible sourcing and supporting sustainable farming practices.",
     value_quality_title: "Quality Excellence",
-    value_quality_desc: "Every product undergoes rigorous quality control to ensure only the finest spices reach our customers.",
+    value_quality_desc:
+      "Every product undergoes rigorous quality control to ensure only the finest spices reach our customers.",
     value_partnership_title: "Fair Partnerships",
-    value_partnership_desc: "We build lasting relationships with farmers and suppliers based on fairness and mutual respect.",
+    value_partnership_desc:
+      "We build lasting relationships with farmers and suppliers based on fairness and mutual respect.",
     value_community_title: "Community Focus",
-    value_community_desc: "We support the communities where we source our spices, contributing to their growth and prosperity.",
+    value_community_desc:
+      "We support the communities where we source our spices, contributing to their growth and prosperity.",
 
     // Products Section (Standardized)
     view_all_products: "View All Products",
@@ -126,34 +134,44 @@ const translations = {
       "An essential mineral used to enhance and balance flavors. It is a fundamental seasoning in all cuisines worldwide.",
 
     red_pepper_title: "Red Pepper",
-    red_pepper_description: "Crushed red pepper flakes add heat and flavor to any dish. Perfect for pizza, pasta, and marinades with a medium to hot spice level.",
+    red_pepper_description:
+      "Crushed red pepper flakes add heat and flavor to any dish. Perfect for pizza, pasta, and marinades with a medium to hot spice level.",
     mango_pepper_title: "Mango Pepper",
-    mango_pepper_description: "A unique blend combining sweet mango flavor with spicy pepper heat. Excellent for tropical dishes, marinades, and exotic seasonings.",
+    mango_pepper_description:
+      "A unique blend combining sweet mango flavor with spicy pepper heat. Excellent for tropical dishes, marinades, and exotic seasonings.",
     chile_lime_title: "Chile and Lime",
-    chile_lime_description: "The perfect combination of spicy chile and tangy lime. Great for Mexican cuisine, grilled meats, and adding zest to vegetables and snacks.",
+    chile_lime_description:
+      "The perfect combination of spicy chile and tangy lime. Great for Mexican cuisine, grilled meats, and adding zest to vegetables and snacks.",
     white_pepper_title: "White Pepper",
-    white_pepper_description: "Milder than black pepper with a clean, sharp flavor. Ideal for light-colored dishes, cream sauces, and Asian cuisine where color matters.",
+    white_pepper_description:
+      "Milder than black pepper with a clean, sharp flavor. Ideal for light-colored dishes, cream sauces, and Asian cuisine where color matters.",
     ginger_title: "Ginger",
-    ginger_description: "Ground ginger provides a warm, spicy-sweet flavor. Essential for Asian cooking, baking, and adding aromatic warmth to curries and teas.",
+    ginger_description:
+      "Ground ginger provides a warm, spicy-sweet flavor. Essential for Asian cooking, baking, and adding aromatic warmth to curries and teas.",
     cayenne_title: "Cayenne Pepper",
-    cayenne_description: "Pure heat with a clean, fiery flavor. This ground red pepper adds serious spice to any dish without overwhelming other flavors.",
+    cayenne_description:
+      "Pure heat with a clean, fiery flavor. This ground red pepper adds serious spice to any dish without overwhelming other flavors.",
     chipotle_title: "Chipotle",
-    chipotle_description: "Smoke-dried jalapeño peppers with a rich, smoky flavor and moderate heat. Perfect for BBQ, Mexican dishes, and adding depth to sauces.",
+    chipotle_description:
+      "Smoke-dried jalapeño peppers with a rich, smoky flavor and moderate heat. Perfect for BBQ, Mexican dishes, and adding depth to sauces.",
     lime_pepper_title: "Lime Pepper",
-    lime_pepper_description: "A zesty blend of black pepper and tangy lime. Excellent for seafood, chicken, vegetables, and adding a citrusy kick to any dish.",
+    lime_pepper_description:
+      "A zesty blend of black pepper and tangy lime. Excellent for seafood, chicken, vegetables, and adding a citrusy kick to any dish.",
     onion_title: "Onion Powder",
-    onion_description: "Concentrated onion flavor without the tears. Essential for dry rubs, seasonings, and adding savory depth to soups, stews, and marinades.",
+    onion_description:
+      "Concentrated onion flavor without the tears. Essential for dry rubs, seasonings, and adding savory depth to soups, stews, and marinades.",
     oregano_title: "Oregano",
-    oregano_description: "A classic Mediterranean herb with a warm, aromatic flavor. Essential for pizza, pasta sauces, Greek dishes, and Italian cuisine.",
+    oregano_description:
+      "A classic Mediterranean herb with a warm, aromatic flavor. Essential for pizza, pasta sauces, Greek dishes, and Italian cuisine.",
     cajun_title: "Cajun Seasoning",
-    cajun_description: "A bold Louisiana blend of paprika, cayenne, garlic, and herbs. Perfect for blackened fish, jambalaya, gumbo, and authentic Creole cooking.",
+    cajun_description:
+      "A bold Louisiana blend of paprika, cayenne, garlic, and herbs. Perfect for blackened fish, jambalaya, gumbo, and authentic Creole cooking.",
     rosemary_title: "Rosemary",
-    rosemary_description: "Aromatic pine-like herb with a robust, earthy flavor. Excellent with roasted meats, potatoes, bread, and Mediterranean dishes.",
+    rosemary_description:
+      "Aromatic pine-like herb with a robust, earthy flavor. Excellent with roasted meats, potatoes, bread, and Mediterranean dishes.",
     fajita_title: "Fajita Seasoning",
-    fajita_description: "A Tex-Mex blend of chili peppers, cumin, paprika, and garlic. Perfect for chicken, beef, and vegetable fajitas with authentic Mexican flavor."
-    ,
-
-
+    fajita_description:
+      "A Tex-Mex blend of chili peppers, cumin, paprika, and garlic. Perfect for chicken, beef, and vegetable fajitas with authentic Mexican flavor.",
     // Contact Section
     contact_title: "Get In Touch",
     contact_subtitle: "Ready to elevate your culinary experience?",
@@ -161,8 +179,8 @@ const translations = {
     contact_address: "123 Spice Street<br>Flavor District, FD 12345",
     contact_phone_title: "Call Us",
     contact_email_title: "Email Us",
-    contact_hero_subtitle: "Ready to elevate your culinary experience? We'd love to hear from you.",
-
+    contact_hero_subtitle:
+      "Ready to elevate your culinary experience? We'd love to hear from you.",
 
     // Form
     form_name: "Name",
@@ -173,7 +191,8 @@ const translations = {
 
     // CTA Section
     ready_to_explore: "Ready to Explore Our Premium Spices?",
-    discover_collection: "Discover our carefully curated collection of premium spices from around the world.",
+    discover_collection:
+      "Discover our carefully curated collection of premium spices from around the world.",
 
     // Footer
     footer_copyright: "© 2025 TerraFeed. All rights reserved.",
@@ -186,126 +205,6 @@ const translations = {
     spices_page_title: "Our Premium Spices",
     spices_page_subtitle:
       "Discover the world of flavors with our carefully selected spices",
-    filter_all: "All Spices",
-    filter_whole: "Whole Spices",
-    filter_ground: "Ground Spices",
-    filter_blends: "Spice Blends",
-    filter_herbs: "Herbs",
-
-    // Individual Spices
-    spice_cardamom_title: "Green Cardamom",
-    spice_cardamom_origin: "Origin: India, Guatemala",
-    spice_cardamom_desc:
-      'Known as the "Queen of Spices," cardamom offers a sweet, floral aroma with hints of citrus and mint.',
-    spice_uses: "Uses:",
-    spice_benefits: "Health Benefits:",
-    spice_ingredients: "Ingredients:",
-    learn_more: "Learn More",
-
-    // Spice Care Tips
-    spice_care_title: "Spice Care & Storage Tips",
-    spice_care_subtitle: "Keep your spices fresh and flavorful",
-    tip_temperature_title: "Temperature Control",
-    tip_temperature_desc:
-      "Store spices in a cool, dry place away from heat sources like stoves and direct sunlight.",
-    tip_container_title: "Proper Containers",
-    tip_container_desc:
-      "Use airtight containers to prevent moisture and maintain freshness. Glass jars work best.",
-    tip_freshness_title: "Check Freshness",
-    tip_freshness_desc:
-      "Replace ground spices every 2-3 years and whole spices every 3-4 years for best flavor.",
-
-    // Recipes Page
-    recipes_page_title: "Spice-Inspired Recipes",
-    recipes_page_subtitle:
-      "Discover delicious recipes using our premium spices",
-    filter_all_recipes: "All Recipes",
-    filter_appetizers: "Appetizers",
-    filter_main: "Main Dishes",
-    filter_desserts: "Desserts",
-    filter_beverages: "Beverages",
-    featured_spices: "Featured Spices:",
-    view_recipe: "View Recipe",
-    ingredients: "Ingredients:",
-    instructions: "Instructions:",
-
-    // Blog Page
-    blog_page_title: "Spice Knowledge Hub",
-    blog_page_subtitle:
-      "Discover the world of spices through our expert insights",
-    featured: "Featured",
-    read_more: "Read More",
-    category_health: "Health",
-    category_cooking: "Cooking",
-    category_sustainability: "Sustainability",
-    category_tips: "Tips",
-    category_culture: "Culture",
-    category_seasonal: "Seasonal",
-    previous: "Previous",
-    next: "Next",
-    newsletter_title: "Stay Updated",
-    newsletter_desc:
-      "Subscribe to our newsletter for the latest spice tips, recipes, and industry insights.",
-    newsletter_placeholder: "Enter your email",
-    subscribe: "Subscribe",
-
-    // Wholesale Page
-    wholesale_page_title: "Wholesale Solutions",
-    wholesale_page_subtitle:
-      "Premium spices for restaurants, retailers, and food manufacturers",
-    wholesale_benefits_title: "Why Choose TerraFeed Wholesale?",
-    wholesale_benefits_subtitle:
-      "Trusted by businesses worldwide for quality and reliability",
-    benefit_delivery_title: "Fast Delivery",
-    benefit_delivery_desc:
-      "Reliable supply chain with quick turnaround times to keep your business running smoothly.",
-    benefit_pricing_title: "Competitive Pricing",
-    benefit_pricing_desc:
-      "Volume discounts and flexible pricing structures to maximize your profit margins.",
-    benefit_quality_title: "Quality Assurance",
-    benefit_quality_desc:
-      "Rigorous testing and certification processes ensure consistent, premium quality products.",
-    benefit_support_title: "Dedicated Support",
-    benefit_support_desc:
-      "Personal account managers and 24/7 customer support for all your business needs.",
-
-    // Wholesale Categories
-    wholesale_categories_title: "Our Wholesale Categories",
-    wholesale_categories_subtitle:
-      "Comprehensive spice solutions for every business need",
-    category_restaurant_title: "Restaurant Solutions",
-    category_retail_title: "Retail Solutions",
-    category_manufacturing_title: "Manufacturing Solutions",
-    get_quote: "Get Quote",
-
-    // Pricing
-    pricing_title: "Wholesale Pricing Tiers",
-    pricing_subtitle: "Flexible pricing based on your volume requirements",
-    tier_starter_title: "Starter",
-    tier_professional_title: "Professional",
-    tier_enterprise_title: "Enterprise",
-    discount_off: "off retail prices",
-    contact_sales: "Contact Sales",
-
-    // Wholesale Form
-    wholesale_contact_title: "Get Started with Wholesale",
-    wholesale_contact_subtitle:
-      "Tell us about your business needs and we'll create a custom solution",
-    form_company: "Company Name",
-    form_business_type: "Business Type",
-    form_contact_name: "Contact Name",
-    form_phone: "Phone",
-    form_monthly_volume: "Expected Monthly Volume",
-    form_spices_interest: "Spices of Interest",
-    form_additional_info: "Additional Information",
-    submit_inquiry: "Submit Inquiry",
-    select_business_type: "Select Business Type",
-    business_restaurant: "Restaurant/Food Service",
-    business_retail: "Retail Store",
-    business_manufacturing: "Food Manufacturing",
-    business_distributor: "Distributor",
-    business_other: "Other",
-    select_volume: "Select Volume",
   },
 
   ar: {
@@ -350,22 +249,30 @@ const translations = {
       "نقدم حاليًا مجموعة واسعة من المنتجات لتلبية كل الاحتياجات وبجميع الأحجام، من عبوات الوجبات الجاهزة إلى الدلاء والأحجام الصناعية. تشمل فئات منتجاتنا التوابل والأعشاب، خلطات التوابل، زيوت الزيتون، المشروبات، الصلصات الحارة، الشاي، التتبيلات والصلصات، المنتجات العضوية والصحية، الأطباق الجانبية، وقواعد الحساء. نحن ملتزمون بالجودة والاستدامة في كل منتج نقدمه.",
 
     // NEW About page content
-    about_page_subheader: "اكتشف قصتنا، مهمتنا، والتزامنا بجودة التوابل الفاخرة",
+    about_page_subheader:
+      "اكتشف قصتنا، مهمتنا، والتزامنا بجودة التوابل الفاخرة",
     our_history_title: "تاريخنا",
-    our_history_desc: "أكثر من 50 عامًا من التفاني في جلب النكهات الأصيلة من جميع أنحاء العالم إلى مطبخك.",
+    our_history_desc:
+      "أكثر من 50 عامًا من التفاني في جلب النكهات الأصيلة من جميع أنحاء العالم إلى مطبخك.",
     our_mission_title: "مهمتنا",
-    our_mission_desc: "ربط المطابخ حول العالم بالتوابل الفاخرة مع دعم المجتمعات الزراعية المستدامة.",
+    our_mission_desc:
+      "ربط المطابخ حول العالم بالتوابل الفاخرة مع دعم المجتمعات الزراعية المستدامة.",
     our_vision_title: "رؤيتنا",
-    our_vision_desc: "أن نكون الشركة الرائدة عالميًا في التوابل الفاخرة، وأن نضع معايير للجودة والاستدامة.",
+    our_vision_desc:
+      "أن نكون الشركة الرائدة عالميًا في التوابل الفاخرة، وأن نضع معايير للجودة والاستدامة.",
     our_values_title: "قيمنا",
     value_sustainability_title: "الاستدامة",
-    value_sustainability_desc: "نحن ملتزمون بالمصادر المسؤولة بيئيًا ودعم ممارسات الزراعة المستدامة.",
+    value_sustainability_desc:
+      "نحن ملتزمون بالمصادر المسؤولة بيئيًا ودعم ممارسات الزراعة المستدامة.",
     value_quality_title: "تميز الجودة",
-    value_quality_desc: "يخضع كل منتج لمراقبة جودة صارمة لضمان وصول أجود التوابل إلى عملائنا.",
+    value_quality_desc:
+      "يخضع كل منتج لمراقبة جودة صارمة لضمان وصول أجود التوابل إلى عملائنا.",
     value_partnership_title: "شراكات عادلة",
-    value_partnership_desc: "نبني علاقات دائمة مع المزارعين والموردين على أساس العدالة والاحترام المتبادل.",
+    value_partnership_desc:
+      "نبني علاقات دائمة مع المزارعين والموردين على أساس العدالة والاحترام المتبادل.",
     value_community_title: "التركيز على المجتمع",
-    value_community_desc: "ندعم المجتمعات التي نستورد منها توابلنا، مما يساهم في نموها وازدهارها.",
+    value_community_desc:
+      "ندعم المجتمعات التي نستورد منها توابلنا، مما يساهم في نموها وازدهارها.",
 
     // Products Section (Standardized)
     view_all_products: "عرض جميع المنتجات",
@@ -432,32 +339,44 @@ const translations = {
       "معدن أساسي يستخدم لتعزيز وتوازن النكهات. إنه توابل أساسية في جميع المطابخ حول العالم.",
 
     red_pepper_title: "الفلفل الأحمر",
-    red_pepper_description: "رقائق الفلفل الأحمر المطحون تضيف الحرارة والنكهة لأي طبق. مثالي للبيتزا والمعكرونة والمتبلات بمستوى توابل متوسط إلى حار.",
+    red_pepper_description:
+      "رقائق الفلفل الأحمر المطحون تضيف الحرارة والنكهة لأي طبق. مثالي للبيتزا والمعكرونة والمتبلات بمستوى توابل متوسط إلى حار.",
     mango_pepper_title: "فلفل المانجو",
-    mango_pepper_description: "خليط فريد يجمع بين نكهة المانجو الحلوة وحرارة الفلفل الحار. ممتاز للأطباق الاستوائية والمتبلات والتوابل الغريبة.",
+    mango_pepper_description:
+      "خليط فريد يجمع بين نكهة المانجو الحلوة وحرارة الفلفل الحار. ممتاز للأطباق الاستوائية والمتبلات والتوابل الغريبة.",
     chile_lime_title: "الفلفل الحار والليمون",
-    chile_lime_description: "الجمع المثالي بين الفلفل الحار والليمون الحامض. رائع للمطبخ المكسيكي واللحوم المشوية وإضافة النكهة للخضروات والمقبلات.",
+    chile_lime_description:
+      "الجمع المثالي بين الفلفل الحار والليمون الحامض. رائع للمطبخ المكسيكي واللحوم المشوية وإضافة النكهة للخضروات والمقبلات.",
     white_pepper_title: "الفلفل الأبيض",
-    white_pepper_description: "أخف من الفلفل الأسود بنكهة نظيفة وحادة. مثالي للأطباق فاتحة اللون والصلصات الكريمية والمطبخ الآسيوي حيث يهم اللون.",
+    white_pepper_description:
+      "أخف من الفلفل الأسود بنكهة نظيفة وحادة. مثالي للأطباق فاتحة اللون والصلصات الكريمية والمطبخ الآسيوي حيث يهم اللون.",
     ginger_title: "الزنجبيل",
-    ginger_description: "الزنجبيل المطحون يوفر نكهة دافئة وحارة حلوة. ضروري للطبخ الآسيوي والخبز وإضافة الدفء العطري للكاري والشاي.",
+    ginger_description:
+      "الزنجبيل المطحون يوفر نكهة دافئة وحارة حلوة. ضروري للطبخ الآسيوي والخبز وإضافة الدفء العطري للكاري والشاي.",
     cayenne_title: "فلفل الكايين",
-    cayenne_description: "حرارة نقية بنكهة نظيفة ومحرقة. هذا الفلفل الأحمر المطحون يضيف توابل جدية لأي طبق دون إغلاب النكهات الأخرى.",
+    cayenne_description:
+      "حرارة نقية بنكهة نظيفة ومحرقة. هذا الفلفل الأحمر المطحون يضيف توابل جدية لأي طبق دون إغلاب النكهات الأخرى.",
     chipotle_title: "تشيبوتلي",
-    chipotle_description: "فلفل الهالابينو المدخن بنكهة غنية مدخنة وحرارة معتدلة. مثالي للشواء والأطباق المكسيكية وإضافة العمق للصلصات.",
+    chipotle_description:
+      "فلفل الهالابينو المدخن بنكهة غنية مدخنة وحرارة معتدلة. مثالي للشواء والأطباق المكسيكية وإضافة العمق للصلصات.",
     lime_pepper_title: "فلفل الليمون",
-    lime_pepper_description: "خليط منعش من الفلفل الأسود والليمون الحامض. ممتاز للمأكولات البحرية والدجاج والخضروات وإضافة لمسة حمضية لأي طبق.",
+    lime_pepper_description:
+      "خليط منعش من الفلفل الأسود والليمون الحامض. ممتاز للمأكولات البحرية والدجاج والخضروات وإضافة لمسة حمضية لأي طبق.",
     onion_title: "مسحوق البصل",
-    onion_description: "نكهة البصل المركزة بدون دموع. ضروري للمتبلات الجافة والتوابل وإضافة العمق المالح للشوربات واليخنات والمتبلات.",
+    onion_description:
+      "نكهة البصل المركزة بدون دموع. ضروري للمتبلات الجافة والتوابل وإضافة العمق المالح للشوربات واليخنات والمتبلات.",
     oregano_title: "الأوريجانو",
-    oregano_description: "عشبة متوسطية كلاسيكية بنكهة دافئة وعطرية. ضروري للبيتزا وصلصات المعكرونة والأطباق اليونانية والمطبخ الإيطالي.",
+    oregano_description:
+      "عشبة متوسطية كلاسيكية بنكهة دافئة وعطرية. ضروري للبيتزا وصلصات المعكرونة والأطباق اليونانية والمطبخ الإيطالي.",
     cajun_title: "توابل الكاجون",
-    cajun_description: "خليط جريء من لويزيانا من البابريكا والكايين والثوم والأعشاب. مثالي للسمك المسود والجامبالايا والجومبو والطبخ الكريولي الأصيل.",
+    cajun_description:
+      "خليط جريء من لويزيانا من البابريكا والكايين والثوم والأعشاب. مثالي للسمك المسود والجامبالايا والجومبو والطبخ الكريولي الأصيل.",
     rosemary_title: "إكليل الجبل",
-    rosemary_description: "عشبة عطرية شبيهة بالصنوبر بنكهة قوية وترابية. ممتاز مع اللحوم المشوية والبطاطس والخبز والأطباق المتوسطية.",
+    rosemary_description:
+      "عشبة عطرية شبيهة بالصنوبر بنكهة قوية وترابية. ممتاز مع اللحوم المشوية والبطاطس والخبز والأطباق المتوسطية.",
     fajita_title: "توابل الفاهيتا",
-    fajita_description: "خليط تكس-مكس من الفلفل الحار والكمون والبابريكا والثوم. مثالي لفاهيتا الدجاج ولحم البقر والخضروات بنكهة مكسيكية أصيلة."
-    ,
+    fajita_description:
+      "خليط تكس-مكس من الفلفل الحار والكمون والبابريكا والثوم. مثالي لفاهيتا الدجاج ولحم البقر والخضروات بنكهة مكسيكية أصيلة.",
     // Contact Section
     contact_title: "تواصل معنا",
     contact_subtitle: "هل أنت مستعد لرفع مستوى تجربتك في الطهي؟",
@@ -465,8 +384,8 @@ const translations = {
     contact_address: "١٢٣ شارع التوابل<br>منطقة النكهات، ن ن ١٢٣٤٥",
     contact_phone_title: "اتصل بنا",
     contact_email_title: "راسلنا",
-    contact_hero_subtitle: "على استعداد لرفع تجربتك في الطهي؟ يسعدنا أن نسمع منك.",
-
+    contact_hero_subtitle:
+      "على استعداد لرفع تجربتك في الطهي؟ يسعدنا أن نسمع منك.",
 
     // Form
     form_name: "الاسم",
@@ -477,7 +396,8 @@ const translations = {
 
     // CTA Section
     ready_to_explore: "هل أنت مستعد لاستكشاف توابلنا الفاخرة؟",
-    discover_collection: "اكتشف مجموعتنا المختارة بعناية من التوابل الفاخرة من جميع أنحاء العالم.",
+    discover_collection:
+      "اكتشف مجموعتنا المختارة بعناية من التوابل الفاخرة من جميع أنحاء العالم.",
 
     // Footer
     footer_copyright: "© ٢٠٢٥ تيرافيد. جميع الحقوق محفوظة.",
@@ -486,124 +406,9 @@ const translations = {
     view_map: "عرض على الخريطة",
     find_us: "موقعنا",
 
-    // Spices Page
+    //
     spices_page_title: "توابلنا الفاخرة",
     spices_page_subtitle: "اكتشف عالم النكهات مع توابلنا المختارة بعناية",
-    filter_all: "جميع التوابل",
-    filter_whole: "التوابل الكاملة",
-    filter_ground: "التوابل المطحونة",
-    filter_blends: "خلطات التوابل",
-    filter_herbs: "الأعشاب",
-
-    // Individual Spices
-    spice_cardamom_title: "الهيل الأخضر",
-    spice_cardamom_origin: "المنشأ: الهند، غواتيمالا",
-    spice_cardamom_desc:
-      'يُعرف باسم "ملكة التوابل"، يقدم الهيل رائحة حلوة وزهرية مع لمحات من الحمضيات والنعناع.',
-    spice_uses: "الاستخدامات:",
-    spice_benefits: "الفوائد الصحية:",
-    spice_ingredients: "المكونات:",
-    learn_more: "اعرف المزيد",
-
-    // Spice Care Tips
-    spice_care_title: "نصائح العناية بالتوابل والتخزين",
-    spice_care_subtitle: "حافظ على توابلك طازجة ولذيذة",
-    tip_temperature_title: "التحكم في درجة الحرارة",
-    tip_temperature_desc:
-      "احفظ التوابل في مكان بارد وجاف بعيداً عن مصادر الحرارة مثل المواقد وأشعة الشمس المباشرة.",
-    tip_container_title: "الحاويات المناسبة",
-    tip_container_desc:
-      "استخدم حاويات محكمة الإغلاق لمنع الرطوبة والحفاظ على النضارة. البرطمانات الزجاجية هي الأفضل.",
-    tip_freshness_title: "فحص النضارة",
-    tip_freshness_desc:
-      "استبدل التوابل المطحونة كل ٢-٣ سنوات والتوابل الكاملة كل ٣-٤ سنوات للحصول على أفضل نكهة.",
-
-    // Recipes Page
-    recipes_page_title: "وصفات مستوحاة من التوابل",
-    recipes_page_subtitle: "اكتشف وصفات لذيذة باستخدام توابلنا الفاخرة",
-    filter_all_recipes: "جميع الوصفات",
-    filter_appetizers: "المقبلات",
-    filter_main: "الأطباق الرئيسية",
-    filter_desserts: "الحلويات",
-    filter_beverages: "المشروبات",
-    featured_spices: "التوابل المميزة:",
-    view_recipe: "عرض الوصفة",
-    ingredients: "المكونات:",
-    instructions: "التعليمات:",
-
-    // Blog Page
-    blog_page_title: "مركز معرفة التوابل",
-    blog_page_subtitle: "اكتشف عالم التوابل من خلال رؤى خبرائنا",
-    featured: "مميز",
-    read_more: "اقرأ المزيد",
-    category_health: "الصحة",
-    category_cooking: "الطبخ",
-    category_sustainability: "الاستدامة",
-    category_tips: "نصائح",
-    category_culture: "الثقافة",
-    category_seasonal: "موسمي",
-    previous: "السابق",
-    next: "التالي",
-    newsletter_title: "ابق على اطلاع",
-    newsletter_desc:
-      "اشترك في نشرتنا الإخبارية للحصول على أحدث نصائح التوابل والوصفات ورؤى الصناعة.",
-    newsletter_placeholder: "أدخل بريدك الإلكتروني",
-    subscribe: "اشترك",
-
-    // Wholesale Page
-    wholesale_page_title: "حلول الجملة",
-    wholesale_page_subtitle: "توابل فاخرة للمطاعم وتجار التجزئة ومصنعي الأغذية",
-    wholesale_benefits_title: "لماذا تختار جملة تيرافيد؟",
-    wholesale_benefits_subtitle:
-      "موثوق به من قبل الشركات في جميع أنحاء العالم للجودة والموثوقية",
-    benefit_delivery_title: "التسليم السريع",
-    benefit_delivery_desc:
-      "سلسلة توريد موثوقة مع أوقات تسليم سريعة للحفاظ على سير عملك بسلاسة.",
-    benefit_pricing_title: "أسعار تنافسية",
-    benefit_pricing_desc:
-      "خصومات الكمية وهياكل التسعير المرنة لزيادة هوامش ربحك.",
-    benefit_quality_title: "ضمان الجودة",
-    benefit_quality_desc:
-      "عمليات اختبار وشهادات صارمة تضمن منتجات عالية الجودة ومتسقة.",
-    benefit_support_title: "دعم مخصص",
-    benefit_support_desc:
-      "مديرو حسابات شخصيون ودعم عملاء على مدار الساعة لجميع احتياجات عملك.",
-
-    // Wholesale Categories
-    wholesale_categories_title: "فئات الجملة لدينا",
-    wholesale_categories_subtitle: "حلول توابل شاملة لكل احتياجات العمل",
-    category_restaurant_title: "حلول المطاعم",
-    category_retail_title: "حلول التجزئة",
-    category_manufacturing_title: "حلول التصنيع",
-    get_quote: "احصل على عرض سعر",
-
-    // Pricing
-    pricing_title: "مستويات أسعار الجملة",
-    pricing_subtitle: "تسعير مرن بناءً على متطلبات الكمية الخاصة بك",
-    tier_starter_title: "المبتدئ",
-    tier_professional_title: "المحترف",
-    tier_enterprise_title: "المؤسسة",
-    discount_off: "خصم من أسعار التجزئة",
-    contact_sales: "اتصل بالمبيعات",
-
-    // Wholesale Form
-    wholesale_contact_title: "ابدأ مع الجملة",
-    wholesale_contact_subtitle: "أخبرنا عن احتياجات عملك وسننشئ حلاً مخصصاً",
-    form_company: "اسم الشركة",
-    form_business_type: "نوع العمل",
-    form_contact_name: "اسم جهة الاتصال",
-    form_phone: "الهاتف",
-    form_monthly_volume: "الحجم الشهري المتوقع",
-    form_spices_interest: "التوابل المهتم بها",
-    form_additional_info: "معلومات إضافية",
-    submit_inquiry: "إرسال الاستفسار",
-    select_business_type: "اختر نوع العمل",
-    business_restaurant: "مطعم/خدمة طعام",
-    business_retail: "متجر تجزئة",
-    business_manufacturing: "تصنيع الأغذية",
-    business_distributor: "موزع",
-    business_other: "أخرى",
-    select_volume: "اختر الحجم",
   },
 };
 
