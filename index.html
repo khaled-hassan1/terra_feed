@@ -48,22 +48,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto me-3">
             <li class="nav-item">
-              <a class="nav-link" href="#home" data-translate="nav_home"
+              <a class="nav-link active" href="#home" data-translate="nav_home"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" data-translate="nav_about"
+              <a class="nav-link" href="about.html" data-translate="nav_about"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#products" data-translate="nav_products"
+              <a class="nav-link" href="products.html" data-translate="nav_products"
                 >Products</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact" data-translate="nav_contact"
+              <a class="nav-link" href="about.html" data-translate="nav_contact"
                 >Contact</a
               >
             </li>
@@ -88,58 +88,50 @@
     </nav>
 
     <section id="home" class="hero-section">
-      <!-- <div class="hero-overlay"></div> -->
-      <div class="container">
-        <div class="row align-items-center min-vh-100">
-          <div
-            class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1"
-          >
-            <div class="hero-content text-white text-center text-lg-start">
-              <h1
-                class="display-4 fw-bold mb-4 text-white"
-                data-translate="hero_title"
-              >
-                Premium Spices from Nature's Garden
-              </h1>
-              <p class="lead mb-4 text-white" data-translate="hero_subtitle">
-                Discover the finest selection of organic spices and natural
-                ingredients sourced directly from trusted farmers worldwide.
-              </p>
-              <div
-                class="hero-buttons d-flex flex-column flex-md-row justify-content-center justify-content-lg-start"
-              >
-                <a
-                  href="#products"
-                  class="btn btn-primary btn-lg mb-2 mb-md-0 me-md-3"
-                  data-translate="hero_cta_primary"
-                >
-                  Explore Products
-                </a>
-                <a
-                  href="#contact"
-                  class="btn btn-outline-light btn-lg mb-2 mb-md-0 me-md-3"
-                  data-translate="hero_cta_secondary"
-                >
-                  Get In Touch
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-6 d-flex justify-content-center align-items-center order-1 order-lg-2 mb-4 mb-lg-0"
-          >
-            <div class="hero-image">
-              <img
-                src="https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Colorful spices"
-                class="img-fluid rounded shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Hero Overlay -->
+        <div class="hero-overlay"></div>
 
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <!-- Text Content Column -->
+                <!-- Order is set up for LTR: Text (order-2) on left, Image (order-1) on right -->
+                <!-- For RTL, Bootstrap's order classes will automatically reverse when dir="rtl" is applied to <html> -->
+                <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1">
+                    <div class="hero-content text-white text-center text-lg-start">
+                        <h1 class="display-4 fw-bold mb-4 text-white" data-translate="hero_title">
+                            Premium Spices from Nature's Garden
+                        </h1>
+                        <!-- fw-semibold for slightly less bold than fw-bold -->
+                        <p class="lead mb-4 text-white fw-semibold" data-translate="hero_subtitle">
+                            Discover the finest selection of organic spices and natural ingredients sourced directly from trusted farmers worldwide.
+                        </p>
+                        <div class="hero-buttons d-flex flex-column flex-md-row justify-content-center justify-content-lg-start gap-3">
+                            <a href="#products" class="btn btn-primary btn-lg" data-translate="hero_cta_primary">
+                                Explore Products
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg" data-translate="hero_cta_secondary">
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Column (removed image source as it was commented out in your snippet) -->
+                <div class="col-lg-6 d-flex justify-content-center align-items-center order-1 order-lg-2 mb-4 mb-lg-0">
+                    <!-- The image div was commented out in your provided HTML.
+                         If you want to re-include an image here, uncomment and add a valid src.
+                    <div class="hero-image">
+                        <img
+                            src="https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="Colorful spices"
+                            class="img-fluid rounded shadow-lg"
+                        />
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row g-4">
@@ -231,434 +223,149 @@
         </div>
       </div>
     </section>
-
-    <section id="products" class="py-5 bg-light">
-      <div class="container">
+<section id="products" class="py-5 bg-light">
+    <div class="container">
         <div class="text-center mb-5">
-          <h2 class="section-title" data-translate="products_title">
-            Our Premium Collection
-          </h2>
-          <p class="lead" data-translate="products_subtitle">
-            Discover our carefully curated selection of premium spices
-          </p>
+            <h2 class="section-title" data-translate="products_title">
+                Our Premium Collection
+            </h2>
+            <p class="lead" data-translate="products_subtitle">
+                Discover our carefully curated selection of premium spices
+            </p>
         </div>
 
         <div class="row g-4">
-          <!-- Exotic Spices -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img/exotic-spices.jpg"
-                class="card-img-top"
-                alt="Exotic Spices"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/F0F0F0/333333?text=Exotic+Spices';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="product_exotic_title">
-                  Exotic Spices
-                </h5>
-                <p class="card-text" data-translate="product_exotic_desc">
-                  Rare and exotic spices from remote regions, perfect for
-                  adventurous cooking.
-                </p>
-              </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card card h-100 shadow-sm">
+                    <img
+                        src="img/exotic-spices.jpg"
+                        class="card-img-top"
+                        alt="Exotic Spices"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/F0F0F0/333333?text=Exotic+Spices';"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="product_exotic_title">
+                            Exotic Spices
+                        </h5>
+                        <p class="card-text" data-translate="product_exotic_desc">
+                            Rare and exotic spices from remote regions, perfect for
+                            adventurous cooking.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <!-- Asian Spice Blends -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\asian-spice-blends.webp"
-                class="card-img-top"
-                alt="Asian Spice Blends"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/D0D0D0/111111?text=Asian+Blends';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="product_asian_title">
-                  Asian Spice Blends
-                </h5>
-                <p class="card-text" data-translate="product_asian_desc">
-                  Traditional spice blends from across Asia, crafted using
-                  ancient recipes.
-                </p>
-              </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card card h-100 shadow-sm">
+                    <img
+                        src="img\asian-spice-blends.webp"
+                        class="card-img-top"
+                        alt="Asian Spice Blends"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/D0D0D0/111111?text=Asian+Blends';"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="product_asian_title">
+                            Asian Spice Blends
+                        </h5>
+                        <p class="card-text" data-translate="product_asian_desc">
+                            Traditional spice blends from across Asia, crafted using
+                            ancient recipes.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <!-- Curry Powder Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\curry.jpg"
-                class="card-img-top"
-                alt="Curry Powder"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/F0F0F0/333333?text=Curry+Powder';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="curry_title">
-                  Curry Powder
-                </h5>
-                <p class="card-text" data-translate="curry_description">
-                  A versatile blend of aromatic spices like turmeric, coriander,
-                  and cumin. It's the cornerstone of many Indian, Thai, and
-                  Caribbean dishes, providing a warm, complex flavor profile.
-                </p>
-              </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card card h-100 shadow-sm">
+                    <img
+                        src="img\curry.jpg"
+                        class="card-img-top"
+                        alt="Curry Powder"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/F0F0F0/333333?text=Curry+Powder';"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="curry_title">
+                            Curry Powder
+                        </h5>
+                        <p class="card-text" data-translate="curry_description">
+                            A versatile blend of aromatic spices like turmeric, coriander,
+                            and cumin. It's the cornerstone of many Indian, Thai, and
+                            Caribbean dishes, providing a warm, complex flavor profile.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <!-- Seafood Seasoning Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\seafood.jpg"
-                class="card-img-top"
-                alt="Seafood Seasoning"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/E0E0E0/222222?text=Seafood+Seasoning';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="seafood_seasoning_title">
-                  Seafood Seasoning
-                </h5>
-                <p
-                  class="card-text"
-                  data-translate="seafood_seasoning_description"
-                >
-                  A zesty, peppery blend typically featuring celery seed,
-                  paprika, salt, and red pepper. It adds a signature bold flavor
-                  to shrimp, crab, fish, and other seafood.
-                </p>
-              </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card card h-100 shadow-sm">
+                    <img
+                        src="img\seafood.jpg"
+                        class="card-img-top"
+                        alt="Seafood Seasoning"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/E0E0E0/222222?text=Seafood+Seasoning';"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="seafood_seasoning_title">
+                            Seafood Seasoning
+                        </h5>
+                        <p
+                            class="card-text"
+                            data-translate="seafood_seasoning_description"
+                        >
+                            A zesty, peppery blend typically featuring celery seed,
+                            paprika, salt, and red pepper. It adds a signature bold flavor
+                            to shrimp, crab, fish, and other seafood.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <!-- Cumin Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\cumin.jpg"
-                class="card-img-top"
-                alt="Cumin"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/D0D0D0/111111?text=Cumin';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="cumin_title">Cumin</h5>
-                <p class="card-text" data-translate="cumin_description">
-                  A warm, earthy spice with a slightly bitter, peppery taste.
-                  Cumin is a key ingredient in Mexican, Middle Eastern, and
-                  Indian cuisines, essential for chili and taco blends.
-                </p>
-              </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card card h-100 shadow-sm">
+                    <img
+                        src="img\cumin.jpg"
+                        class="card-img-top"
+                        alt="Cumin"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/D0D0D0/111111?text=Cumin';"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="cumin_title">Cumin</h5>
+                        <p class="card-text" data-translate="cumin_description">
+                            A warm, earthy spice with a slightly bitter, peppery taste.
+                            Cumin is a key ingredient in Mexican, Middle Eastern, and
+                            Indian cuisines, essential for chili and taco blends.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <!-- Paprika Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\paprika.jpg"
-                class="card-img-top"
-                alt="Paprika"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/C0C0C0/000000?text=Paprika';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="paprika_title">
-                  Paprika
-                </h5>
-                <p class="card-text" data-translate="paprika_description">
-                  Made from ground red peppers, paprika ranges from sweet and
-                  mild to hot and smoky. It adds vibrant color and a gentle,
-                  sweet flavor to roasted meats, stews, and sauces.
-                </p>
-              </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card card h-100 shadow-sm">
+                    <img
+                        src="img\paprika.jpg"
+                        class="card-img-top"
+                        alt="Paprika"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x200/C0C0C0/000000?text=Paprika';"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="paprika_title">
+                            Paprika
+                        </h5>
+                        <p class="card-text" data-translate="paprika_description">
+                            Made from ground red peppers, paprika ranges from sweet and
+                            mild to hot and smoky. It adds vibrant color and a gentle,
+                            sweet flavor to roasted meats, stews, and sauces.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Basil & Oregano Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\basil.jpg"
-                class="card-img-top"
-                alt="Basil & Oregano"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/B0B0B0/999999?text=Basil+and+Oregano';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="basil_origano_title">
-                  Basil & Oregano
-                </h5>
-                <p class="card-text" data-translate="basil_origano_description">
-                  A classic Mediterranean blend combining the sweet, peppery
-                  notes of basil with the robust, earthy flavor of oregano.
-                  Perfect for pasta sauces, pizza, and roasted vegetables.
-                </p>
-              </div>
+            
+            <div class="col-12 text-center mt-5">
+                <a href="products.html" class="btn btn-primary btn-lg" data-translate="view_all_products">View All Products</a>
             </div>
-          </div>
-
-          <!-- Sazón Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\sazon.jpg"
-                class="card-img-top"
-                alt="Sazón"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/A0A0A0/888888?text=Sazon';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="sazon_title">Sazón</h5>
-                <p class="card-text" data-translate="sazon_description">
-                  A vibrant Latin American seasoning blend with a savory,
-                  umami-rich flavor. It typically contains salt, garlic, cumin,
-                  and coriander, giving a distinctive savory taste and a
-                  yellow-orange hue to rice, stews, and meats.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Poultry Seasoning Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\poultry.jpg"
-                class="card-img-top"
-                alt="Poultry Seasoning"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/909090/777777?text=Poultry+Seasoning';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="poultry_seasoning_title">
-                  Poultry Seasoning
-                </h5>
-                <p
-                  class="card-text"
-                  data-translate="poultry_seasoning_description"
-                >
-                  An aromatic blend of herbs like sage, thyme, rosemary, and
-                  marjoram. It enhances the flavor of chicken, turkey, and other
-                  poultry dishes with classic, savory notes.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Garlic, Paprika & Onion Blend Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\garlic.jpg"
-                class="card-img-top"
-                alt="Garlic, Paprika & Onion Blend"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/808080/666666?text=Garlic+Paprika+Onion';"
-              />
-              <div class="card-body">
-                <h5
-                  class="card-title"
-                  data-translate="garlic_paprika_onion_title"
-                >
-                  Garlic, Paprika & Onion Blend
-                </h5>
-                <p
-                  class="card-text"
-                  data-translate="garlic_paprika_onion_description"
-                >
-                  A foundational, all-purpose seasoning that combines the
-                  pungent warmth of garlic and onion with the sweet, mild flavor
-                  of paprika. Ideal for seasoning vegetables, meats, and soups.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Sazón, Paprika & Minced Garlic Blend Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\sazon2.jpg"
-                class="card-img-top"
-                alt="Sazón, Paprika & Minced Garlic Blend"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/707070/555555?text=Sazon+Paprika+Garlic';"
-              />
-              <div class="card-body">
-                <h5
-                  class="card-title"
-                  data-translate="sazon_paprika_garlic_title"
-                >
-                  Sazón, Paprika & Minced Garlic Blend
-                </h5>
-                <p
-                  class="card-text"
-                  data-translate="sazon_paprika_garlic_description"
-                >
-                  A powerful, savory blend that combines the rich flavor of
-                  Sazón with the vibrant color and sweetness of paprika and the
-                  aromatic punch of minced garlic. A go-to for many Spanish and
-                  Latin dishes.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Orange Pepper Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\orange.jpg"
-                class="card-img-top"
-                alt="Orange Pepper"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/606060/444444?text=Orange+Pepper';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="orange_pepper_title">
-                  Orange Pepper
-                </h5>
-                <p class="card-text" data-translate="orange_pepper_description">
-                  A tangy and mildly spicy blend featuring black pepper, orange
-                  peel, and other spices. It provides a bright, citrusy zing to
-                  chicken, fish, and marinades.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Canadian Steak Seasoning Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\canadian.jpg"
-                class="card-img-top"
-                alt="Canadian Steak Seasoning"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/505050/333333?text=Canadian+Steak';"
-              />
-              <div class="card-body">
-                <h5
-                  class="card-title"
-                  data-translate="steak_canadian_blend_title"
-                >
-                  Canadian Steak Seasoning
-                </h5>
-                <p
-                  class="card-text"
-                  data-translate="steak_canadian_blend_description"
-                >
-                  A bold, robust blend of coarse spices, typically featuring
-                  black pepper, dill seed, coriander, and garlic. It creates a
-                  savory, peppery crust on steaks and burgers.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cayenne Pepper Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\cayenne.jpg"
-                class="card-img-top"
-                alt="Cayenne Pepper"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/404040/222222?text=Cayenne+Pepper';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="cayenne_title">
-                  Cayenne Pepper
-                </h5>
-                <p class="card-text" data-translate="cayenne_description">
-                  A fine ground powder from dried red chili peppers. It delivers
-                  a clean, sharp heat that can be added to any dish to increase
-                  its spiciness.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cinnamon Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\cinnamon.jpg"
-                class="card-img-top"
-                alt="Cinnamon"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/303030/111111?text=Cinnamon';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="cinnamon_title">
-                  Cinnamon
-                </h5>
-                <p class="card-text" data-translate="cinnamon_description">
-                  A warm, sweet spice with a fragrant aroma. It's a staple in
-                  baking and desserts but also adds depth to savory dishes like
-                  Moroccan stews and Middle Eastern rice.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Garlic Powder Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\garlic-2.jpg"
-                class="card-img-top"
-                alt="Garlic Powder"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/202020/000000?text=Garlic+Powder';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="garlic_title">
-                  Garlic Powder
-                </h5>
-                <p class="card-text" data-translate="garlic_description">
-                  The dried, ground form of garlic cloves. It offers a pungent,
-                  savory flavor that can be used to season nearly any savory
-                  dish, from vegetables to sauces and rubs.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Chili Powder Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\chili.jpg"
-                class="card-img-top"
-                alt="Chili Powder"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/101010/888888?text=Chili+Powder';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="chili_title">
-                  Chili Powder
-                </h5>
-                <p class="card-text" data-translate="chili_description">
-                  A vibrant blend of ground chili peppers with other spices like
-                  cumin, oregano, and garlic. It's the key ingredient for making
-                  classic chili con carne and a great rub for meat.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Salt Card -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card card h-100 shadow-sm">
-              <img
-                src="img\salt.jpg"
-                class="card-img-top"
-                alt="Salt"
-                onerror="this.onerror=null;this.src='https://placehold.co/400x200/000000/999999?text=Salt';"
-              />
-              <div class="card-body">
-                <h5 class="card-title" data-translate="salt_title">Salt</h5>
-                <p class="card-text" data-translate="salt_description">
-                  An essential mineral used to enhance and balance flavors. It
-                  is a fundamental seasoning in all cuisines worldwide.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
     <section id="contact" class="py-5">
       <div class="container">

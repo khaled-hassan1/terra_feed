@@ -42,6 +42,7 @@ const translations = {
     about_desc3:
       "Currently, we offer a wide variety of products for every need in every size, from take-out packets to pails and industrial sizes. Our categories include Spices & Herbs, Seasoning Blends, Olive Oils, Beverages, Hot Sauces, Teas, Marinades & Dressings, Organic & Healthy items, Side Dishes, and Soup Bases. We are committed to quality and sustainability in every product we deliver.",
     // Products Section (Standardized)
+    view_all_products:"View All Products",
     products_title: "Our Premium Collection",
     products_subtitle:
       "Discover our carefully curated selection of premium spices",
@@ -125,7 +126,7 @@ const translations = {
 
     // Google Maps
     view_map: "View on Map",
-    find_us: "Find Us",
+    find_us: "Location",
 
     // Spices Page
     spices_page_title: "Our Premium Spices",
@@ -294,6 +295,7 @@ const translations = {
     about_desc3:
       "نقدم حاليًا مجموعة واسعة من المنتجات لتلبية كل الاحتياجات وبجميع الأحجام، من عبوات الوجبات الجاهزة إلى الدلاء والأحجام الصناعية. تشمل فئات منتجاتنا التوابل والأعشاب، خلطات التوابل، زيوت الزيتون، المشروبات، الصلصات الحارة، الشاي، التتبيلات والصلصات، المنتجات العضوية والصحية، الأطباق الجانبية، وقواعد الحساء. نحن ملتزمون بالجودة والاستدامة في كل منتج نقدمه.",
     // Products Section (Standardized)
+    view_all_products:"عرض جميع المنتجات",
     products_title: "مجموعتنا الفاخرة",
     products_subtitle: "اكتشف مجموعتنا المختارة بعناية من التوابل الفاخرة",
     product_exotic_title: "توابل غريبة",
@@ -375,7 +377,7 @@ const translations = {
 
     // Google Maps
     view_map: "عرض على الخريطة",
-    find_us: "اعثر علينا",
+    find_us: "موقعنا",
 
     // Spices Page
     spices_page_title: "توابلنا الفاخرة",

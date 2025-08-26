@@ -1,14 +1,19 @@
 /* Custom CSS for TerraFeed Website - Dark Gray & Green Theme */
 
 :root {
-  --primary-color: #27ae60; /* Green */
-  --secondary-color: #2ecc71; /* Light Green */
-  --accent-color: #2c3e50; /* Dark Gray */
-  --success-color: #34495e; /* Medium Gray */
+  --primary-color: #27ae60;
+  /* Green */
+  --secondary-color: #2ecc71;
+  /* Light Green */
+  --accent-color: #2c3e50;
+  /* Dark Gray */
+  --success-color: #34495e;
+  /* Medium Gray */
   --text-dark: #2c3e50;
   --text-light: #7f8c8d;
   --bg-light: #f8f9fa;
-  --bg-dark: #1a252f; /* Very Dark Gray */
+  --bg-dark: #1a252f;
+  /* Very Dark Gray */
 }
 
 * {
@@ -35,6 +40,7 @@ p {
   margin-bottom: 1rem;
   color: var(--text-dark);
 }
+
 /* Bootstrap overrides */
 .btn-primary {
   background-color: var(--primary-color);
@@ -98,6 +104,7 @@ p {
   transition: color 0.3s ease;
   color: var(--text-dark);
 }
+
 .dropdown-item:hover {
   color: var(--primary-color) !important;
 }
@@ -112,6 +119,7 @@ p {
   border-color: var(--primary-color);
   color: var(--bg-light);
 }
+
 .language-switcher .btn:hover {
   border-radius: 20px;
   background-color: var(--accent-color);
@@ -121,15 +129,25 @@ p {
 
 /* Hero Section */
 .hero-section {
-  background: var(--primary-color);
-  /* linear-gradient(135deg, var(--bg-dark) 0%, var(--primary-color) 100%); */
-  background-attachment: fixed;
+  background-image: url("../img/2148377557-ar.jpg");
+  
+  background-size: cover;
+  background-position: center;
   color: white;
   position: relative;
-  min-height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
+}
+html[dir="rtl"] .hero-section {
+  background-image: url("../img/2148377557.jpg"); /* Image for RTL */
+}
+.bg-products {
+  background-image: url("../img/429.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-overlay {
@@ -138,12 +156,11 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(44, 62, 80, 0.9) 0%,
-    rgba(26, 37, 47, 0.8) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(44, 62, 80, 0.9) 0%,
+      rgba(26, 37, 47, 0.8) 100%);
   background-image: url(img/2148377558.jpg);
+  z-index: 1;
 }
 
 .hero-content {
@@ -160,9 +177,11 @@ p {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -173,23 +192,25 @@ p {
   margin-right: 1rem;
 }
 
-.btn-check:checked + .btn,
+.btn-check:checked+.btn,
 .btn.active,
 .btn.show,
 .btn:first-child:active,
-:not(.btn-check) + .btn:active {
+:not(.btn-check)+.btn:active {
   background-color: var(--accent-color) !important;
   border-color: var(--accent-color) !important;
   /* Add any other styles for the active state */
 }
-.btn-check:checked + .btn,
+
+.btn-check:checked+.btn,
 .btn.active,
 .btn.show,
 .btn:first-child:active,
-:not(.btn-check) + .btn:active {
+:not(.btn-check)+.btn:active {
   color: white !important;
   text-align: center;
 }
+
 .hero-buttons .btn-success {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
@@ -239,11 +260,9 @@ p {
 .stat-item {
   text-align: center;
   padding: 2rem 1rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--secondary-color));
   border-radius: 15px;
   color: white;
   transition: transform 0.3s ease;
@@ -424,6 +443,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* Custom scrollbar */
 
 ::-webkit-scrollbar {
@@ -431,24 +451,25 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-dark); /* Use a darker background for the track */
+  background: var(--bg-dark);
+  /* Use a darker background for the track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color); /* Set the thumb to the primary color */
+  background: var(--primary-color);
+  /* Set the thumb to the primary color */
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
 }
+
 /* Page Header Styles */
 .page-header {
-  background: linear-gradient(
-    135deg,
-    var(--bg-dark) 0%,
-    var(--primary-color) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--bg-dark) 0%,
+      var(--primary-color) 100%);
   padding: 120px 0 80px;
   color: white;
   position: relative;
@@ -632,11 +653,9 @@ html {
 
 .pricing-discount {
   padding: 1rem;
-  background: linear-gradient(
-    135deg,
-    var(--accent-color),
-    var(--success-color)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-color),
+      var(--success-color));
   color: white;
   border-radius: 10px;
   margin: 1rem 0;
@@ -740,11 +759,9 @@ html {
 }
 
 .accent-bg {
-  background: linear-gradient(
-    135deg,
-    var(--accent-color),
-    var(--success-color)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-color),
+      var(--success-color));
   color: white;
 }
 
@@ -753,11 +770,9 @@ html {
 }
 
 .primary-bg {
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--secondary-color));
   color: white;
 }
 
@@ -765,8 +780,10 @@ html {
   text-align: center !important;
   color: var(--primary-color);
 }
+
 /* Print Styles */
 @media print {
+
   .navbar,
   .footer,
   .btn,
@@ -791,16 +808,19 @@ html {
     margin-bottom: 39px;
   }
 }
+
 @media (max-width: 440px) {
   .img-fluid {
     margin-top: 25%;
   }
 }
+
 @media (max-width: 990px) {
   .img-fluid {
     margin-top: 20%;
   }
 }
+
 /* Base responsive text alignment */
 .responsive-text {
   text-align: center;
@@ -808,6 +828,7 @@ html {
 
 /* Desktop: Respect dir attribute */
 @media (min-width: 992px) {
+
   /* LTR (Left to Right) - Default */
   [dir="ltr"] .responsive-text,
   .responsive-text {
@@ -1002,4 +1023,19 @@ html {
 
 [dir="rtl"] .social-links a:last-child {
   margin-left: 0;
+}
+
+/* [lang="ar"] .hero-section {
+  background-image: url("../img/2148377557-ar.jpg");
+    background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+} */
+.active {
+  color: var(--primary-color) !important;
 }

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-translate="contact_page_title">
+      Contact Us - TerraFeed - توابل طبيعية عالية الجودة
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/main.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="index.html">
+          <i class="fas fa-seedling me-2"></i>TerraFeed
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" data-translate="nav_home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" data-translate="nav_about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html" data-translate="nav_products"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html" data-translate="nav_contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="language-switcher">
+            <button
+              class="btn btn-outline-primary btn-sm me-2"
+              onclick="changeLanguage('en')"
+            >
+              EN
+            </button>
+            <button
+              class="btn btn-outline-primary btn-sm"
+              onclick="changeLanguage('ar')"
+            >
+              العربية
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-4 fw-bold mb-3" data-translate="contact_page_header">
+              Get In Touch
+            </h1>
+            <p class="lead" data-translate="contact_page_subheader">
+              Ready to elevate your culinary experience? We'd love to hear from you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="contact-form-wrapper bg-light p-5 rounded shadow-sm">
+              <h3 class="text-center mb-4" data-translate="send_message_title">Send Us a Message</h3>
+              <form id="contactForm" class="row g-3">
+                <div class="col-md-6">
+                  <label
+                    for="name"
+                    class="form-label"
+                    data-translate="form_name"
+                    >Name</label
+                  >
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="email"
+                    class="form-label"
+                    data-translate="form_email"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="phone"
+                    class="form-label"
+                    data-translate="form_phone"
+                    >Phone</label
+                  >
+                  <input type="tel" class="form-control" id="phone" />
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="company"
+                    class="form-label"
+                    data-translate="form_company"
+                    >Company</label
+                  >
+                  <input type="text" class="form-control" id="company" />
+                </div>
+                <div class="col-12">
+                  <label
+                    for="subject"
+                    class="form-label"
+                    data-translate="form_subject"
+                    >Subject</label
+                  >
+                  <select class="form-control" id="subject" required>
+                    <option value="" data-translate="select_subject">Select a subject</option>
+                    <option value="general" data-translate="general_inquiry">General Inquiry</option>
+                    <option value="products" data-translate="product_information">Product Information</option>
+                    <option value="wholesale" data-translate="wholesale_inquiry">Wholesale Inquiry</option>
+                    <option value="partnership" data-translate="partnership_opportunity">Partnership Opportunity</option>
+                    <option value="support" data-translate="customer_support">Customer Support</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label
+                    for="message"
+                    class="form-label"
+                    data-translate="form_message"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    required
+                    placeholder="Tell us how we can help you..."
+                  ></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-lg"
+                    data-translate="form_submit"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5" data-translate="contact_info_title">Contact Information</h2>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="contact-info-card bg-white p-4 rounded shadow-sm h-100">
+              <i class="fas fa-map-marker-alt text-primary mb-3 display-5"></i>
+              <h5 data-translate="contact_address_title">Our Location</h5>
+              <p data-translate="contact_address">
+                123 Spice Street<br />Flavor District, FD 12345<br />South Florida, USA
+              </p>
+              <button
+                class="btn btn-outline-primary btn-sm mt-2"
+                onclick="openMap()"
+                data-translate="view_map"
+              >
+                View on Map
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="contact-info-card bg-white p-4 rounded shadow-sm h-100">
+              <i class="fas fa-phone text-primary mb-3 display-5"></i>
+              <h5 data-translate="contact_phone_title">Call Us</h5>
+              <p class="mb-2"><strong>Main:</strong> +1 (555) 123-4567</p>
+              <p class="mb-2"><strong>Sales:</strong> +1 (555) 123-4568</p>
+              <p><strong>Support:</strong> +1 (555) 123-4569</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="contact-info-card bg-white p-4 rounded shadow-sm h-100">
+              <i class="fas fa-envelope text-primary mb-3 display-5"></i>
+              <h5 data-translate="contact_email_title">Email Us</h5>
+              <p class="mb-2"><strong>General:</strong> info@terrafeed.com</p>
+              <p class="mb-2"><strong>Sales:</strong> sales@terrafeed.com</p>
+              <p><strong>Support:</strong> support@terrafeed.com</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="contact-info-card bg-white p-4 rounded shadow-sm h-100">
+              <i class="fas fa-clock text-primary mb-3 display-5"></i>
+              <h5 data-translate="business_hours_title">Business Hours</h5>
+              <p class="mb-2"><strong>Monday - Friday:</strong><br>8:00 AM - 6:00 PM EST</p>
+              <p class="mb-2"><strong>Saturday:</strong><br>9:00 AM - 4:00 PM EST</p>
+              <p><strong>Sunday:</strong><br>Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="map-container">
+              <h3 class="text-center mb-4" data-translate="find_us">Find Us on the Map</h3>
+              <div
+                id="map"
+                style="height: 450px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5" data-translate="faq_title">Frequently Asked Questions</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                    <span data-translate="faq_shipping_question">What are your shipping options?</span>
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body" data-translate="faq_shipping_answer">
+                    We offer various shipping options including standard shipping (3-5 business days), expedited shipping (1-2 business days), and overnight shipping. Free shipping is available on orders over $50.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                    <span data-translate="faq_wholesale_question">Do you offer wholesale pricing?</span>
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body" data-translate="faq_wholesale_answer">
+                    Yes, we offer competitive wholesale pricing for bulk orders. Please contact our sales team at sales@terrafeed.com or call +1 (555) 123-4568 for more information about wholesale opportunities.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                    <span data-translate="faq_organic_question">Are your spices certified organic?</span>
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body" data-translate="faq_organic_answer">
+                    Many of our spices are certified organic and clearly labeled as such. We work with certified organic farmers and suppliers to ensure the highest quality standards. Look for the organic certification on individual product pages.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="footer-brand">
+              <i class="fas fa-seedling me-2"></i>
+              <span class="fw-bold">TerraFeed</span>
+            </div>
+            <p class="mt-2 mb-0 text-light" data-translate="footer_copyright">
+              © 2025 TerraFeed. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a href="#" class="text-light me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-light"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
