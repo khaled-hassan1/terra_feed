@@ -196,6 +196,8 @@ const translations = {
 
     // Footer
     footer_copyright: "© 2025 TerraFeed. All rights reserved.",
+    footer_design: "Design by <a href='https://aaplans.com/' target='_blank'>AAPlans</a>",
+
 
     // Google Maps
     view_map: "View on Map",
@@ -401,6 +403,8 @@ const translations = {
 
     // Footer
     footer_copyright: "© ٢٠٢٥ تيرافيد. جميع الحقوق محفوظة.",
+    footer_design: "تصميم بواسطة <a href='https://aaplans.com/' target='_blank'>AAPlans</a>",
+
 
     // Google Maps
     view_map: "عرض على الخريطة",
