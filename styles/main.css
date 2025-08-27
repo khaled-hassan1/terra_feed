@@ -816,6 +816,9 @@ html {
   .img-fluid {
     margin-top: 25%;
   }
+  footer p{
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 990px) {
