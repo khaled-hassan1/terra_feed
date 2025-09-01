@@ -43,32 +43,6 @@ body {
   z-index: 2;
 }
 
-/* Navigation */
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.nav-link {
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--primary-color) !important;
-}
-
-.nav-link.active {
-  color: var(--primary-color) !important;
-  font-weight: 600;
-}
-
-/* Language Switcher */
-.language-switcher .btn {
-  border-radius: 20px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
 
 /* Category Filter Buttons */
 .category-btn {
@@ -196,28 +170,6 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(5, 150, 105, 0.25);
 }
 
-/* Footer */
-footer {
-  background: var(--dark-color) !important;
-}
-
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.social-link:hover {
-  background: var(--primary-color);
-  transform: translateY(-2px);
-  color: white !important;
-}
 
 /* RTL Support */
 [dir="rtl"] {
@@ -302,22 +254,4 @@ footer {
   .product-card .card-body {
     padding: 1rem;
   }
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
 }

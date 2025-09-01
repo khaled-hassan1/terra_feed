@@ -1,318 +1,755 @@
+// Defult description
+
+const description=' is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.';
+const descriptionAr=' من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.';
+
 // Products Data with Wholesale/Retail Categories
 const products = [
   // Wholesale - Pints (24/carton)
   {
     id: '1',
-    name: 'Curry Powder',
-    nameAr: 'بودرة الكاري',
-    description: 'A versatile blend of aromatic spices like turmeric, coriander, and cumin. Perfect for Indian, Thai, and Caribbean dishes.',
-    descriptionAr: 'خليط متنوع من التوابل العطرة مثل الكركم والكزبرة والكمون. مثالي للأطباق الهندية والتايلاندية والكاريبية.',
-    image: 'https://images.pexels.com/photos/4198943/pexels-photo-4198943.jpeg',
+    name: 'Basil',
+    nameAr: 'ريحان',
+    description: 'Basil is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: `ريحان${descriptionAr}.`,
+    image: '../img/basil.jpg',
     category: 'wholesale',
     subcategory: 'pints',
-    packaging: 'Pints (24/carton)',
-    packagingAr: 'باينت (24/كرتونة)'
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '2',
-    name: 'Cumin',
-    nameAr: 'الكمون',
-    description: 'Warm, earthy spice with slightly bitter, peppery taste. Essential for Mexican, Middle Eastern, and Indian cuisines.',
-    descriptionAr: 'توابل دافئة وترابية مع طعم مر قليلاً وحار. أساسي للمأكولات المكسيكية والشرق أوسطية والهندية.',
-    image: 'https://images.pexels.com/photos/4198935/pexels-photo-4198935.jpeg',
+    name: 'Cajun Seasoning',
+    nameAr: 'كيجين',
+    description: 'Cajun Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'كيجين من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/cajun.jpg',
     category: 'wholesale',
     subcategory: 'pints',
-    packaging: 'Pints (24/carton)',
-    packagingAr: 'باينت (24/كرتونة)'
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '3',
-    name: 'Paprika',
-    nameAr: 'البابريكا',
+    name: 'Chili Powder',
+    nameAr: 'شيلي بودرة',
     description: 'Made from ground red peppers, adds vibrant color and gentle, sweet flavor to roasted meats and sauces.',
     descriptionAr: 'مصنوعة من الفلفل الأحمر المطحون، تضيف لوناً نابضاً ونكهة لطيفة وحلوة للحوم المشوية والصلصات.',
-    image: 'https://images.pexels.com/photos/4198939/pexels-photo-4198939.jpeg',
+    image: '../img/chili.jpg',
     category: 'wholesale',
     subcategory: 'pints',
-    packaging: 'Pints (24/carton)',
-    packagingAr: 'باينت (24/كرتونة)'
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
-
-  // Wholesale - Gallons (6/carton)
   {
     id: '4',
-    name: 'Garlic Powder',
-    nameAr: 'بودرة الثوم',
-    description: 'The dried, ground form of garlic cloves. Offers pungent, savory flavor for seasoning vegetables, sauces and rubs.',
-    descriptionAr: 'الشكل المجفف والمطحون من فصوص الثوم. يقدم نكهة لاذعة ومالحة لتتبيل الخضار والصلصات والخلطات.',
-    image: 'https://images.pexels.com/photos/4198934/pexels-photo-4198934.jpeg',
+    name: 'Cilantro',
+    nameAr: 'كزبرة مجففه',
+    description: 'Cilantro is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'كزبرة مجففه من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/cilantro.jpg',
     category: 'wholesale',
-    subcategory: 'gallons',
-    packaging: 'Gallons (6/carton)',
-    packagingAr: 'غالون (6/كرتونة)'
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '5',
-    name: 'Chili Powder',
-    nameAr: 'بودرة الفلفل الحار',
-    description: 'Vibrant blend of ground chili peppers with cumin, oregano, and garlic. Key ingredient for chili con carne.',
-    descriptionAr: 'خليط نابض من الفلفل الحار المطحون مع الكمون والأوريغانو والثوم. المكون الرئيسي للفلفل الحار بالكارني.',
-    image: 'https://images.pexels.com/photos/4198941/pexels-photo-4198941.jpeg',
+    name: 'Cinnamon Powder',
+    nameAr: 'قرفة مطحونة',
+    description: 'Cinnamon Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'قرفة بودرة من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/cinnamon.jpg',
     category: 'wholesale',
-    subcategory: 'gallons',
-    packaging: 'Gallons (6/carton)',
-    packagingAr: 'غالون (6/كرتونة)'
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '6',
-    name: 'Cajun Seasoning',
-    nameAr: 'توابل الكاجن',
-    description: 'Bold Louisiana blend of paprika, cayenne, garlic, and herbs. Perfect for blackened fish and Creole cooking.',
-    descriptionAr: 'خليط لويزيانا الجريء من البابريكا والكايين والثوم والأعشاب. مثالي للسمك المحمص وطبخ الكريول.',
-    image: 'https://images.pexels.com/photos/4198944/pexels-photo-4198944.jpeg',
+    name: 'Complete Seasoning',
+    nameAr: 'الخلطة المتكاملة',
+    description: 'Complete Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'خلطة متكاملة من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/complete-seasoning.jpg',
     category: 'wholesale',
-    subcategory: 'gallons',
-    packaging: 'Gallons (6/carton)',
-    packagingAr: 'غالون (6/كرتونة)'
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
-
-  // Wholesale - Buckets (1/carton)
+  {
+    id: '6',
+    name: 'Complete Seasoning',
+    nameAr: 'الخلطة المتكاملة',
+    description: 'Complete Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'خلطة متكاملة من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/complete-seasoning.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
   {
     id: '7',
-    name: 'Salt',
-    nameAr: 'الملح',
-    description: 'Essential mineral used to enhance and balance flavors. Fundamental seasoning in all cuisines worldwide.',
-    descriptionAr: 'معدن أساسي يستخدم لتعزيز وتوازن النكهات. توابل أساسية في جميع المأكولات في العالم.',
-    image: 'https://images.pexels.com/photos/4198932/pexels-photo-4198932.jpeg',
+    name: 'Coriander Ground',
+    nameAr: 'كزبرة مطحونة',
+    description: 'Coriander Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'كزبرة مطحونة من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/coriander.jpg',
     category: 'wholesale',
-    subcategory: 'buckets',
-    packaging: 'Buckets (1/carton)',
-    packagingAr: 'دلو (1/كرتونة)'
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '8',
-    name: 'Onion Powder',
-    nameAr: 'بودرة البصل',
-    description: 'Concentrated onion flavor without the tears. Essential for dry rubs and adding savory depth to dishes.',
-    descriptionAr: 'نكهة البصل المركزة بدون دموع. أساسي للخلطات الجافة وإضافة عمق مالح للأطباق.',
-    image: 'https://images.pexels.com/photos/4198933/pexels-photo-4198933.jpeg',
+    name: 'Cumin Seed Ground',
+    nameAr: 'كمون مطحون',
+    description: 'Cumin Seed Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'كمون مطحون من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/cumin.jpg',
     category: 'wholesale',
-    subcategory: 'buckets',
-    packaging: 'Buckets (1/carton)',
-    packagingAr: 'دلو (1/كرتونة)'
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
-
-  // Retail - Standard
   {
     id: '9',
-    name: 'Cinnamon',
-    nameAr: 'القرفة',
-    description: 'Warm, sweet spice with fragrant aroma. Staple in baking and adds depth to savory Moroccan and Middle Eastern dishes.',
-    descriptionAr: 'توابل دافئة وحلوة ذات رائحة عطرة. أساسي في الخبز ويضيف عمقاً للأطباق المالحة المغربية والشرق أوسطية.',
-    image: 'https://images.pexels.com/photos/4198949/pexels-photo-4198949.jpeg',
-    category: 'retail',
-    subcategory: 'standard'
+    name: 'Curry Powder',
+    nameAr: 'كاري بودرة',
+    description: 'Curry Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'كاري بودرة من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/curry.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '10',
-    name: 'Oregano',
-    nameAr: 'الأوريغانو',
-    description: 'Classic Mediterranean herb with warm, aromatic flavor. Essential for pizza, pasta sauces, and Italian cuisine.',
-    descriptionAr: 'عشب البحر الأبيض المتوسط الكلاسيكي بنكهة دافئة وعطرة. أساسي للبيتزا وصلصات المعكرونة والمأكولات الإيطالية.',
-    image: 'https://images.pexels.com/photos/4198947/pexels-photo-4198947.jpeg',
-    category: 'retail',
-    subcategory: 'standard'
+    name: 'Fajita Seasoning',
+    nameAr: 'فاهيتا',
+    description: 'FAJITA SEASONING PAIL is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'فاهيتا من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/fajita.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '11',
-    name: 'Rosemary',
-    nameAr: 'إكليل الجبل',
-    description: 'Aromatic pine-like herb with robust, earthy flavor. Excellent with roasted meats and Mediterranean dishes.',
-    descriptionAr: 'عشب عطري يشبه الصنوبر بنكهة قوية وترابية. ممتاز مع اللحوم المشوية وأطباق البحر الأبيض المتوسط.',
-    image: 'https://images.pexels.com/photos/4198945/pexels-photo-4198945.jpeg',
-    category: 'retail',
-    subcategory: 'standard'
+    name: 'Garlic Powder',
+    nameAr: 'ثوم بودرة',
+    description: 'Fine Ground Garlic Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'ثوم بودرة من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/garlic.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '12',
-    name: 'Ginger',
-    nameAr: 'الزنجبيل',
-    description: 'Ground ginger provides warm, spicy-sweet flavor. Essential for Asian cooking and adding aromatic warmth.',
-    descriptionAr: 'الزنجبيل المطحون يقدم نكهة دافئة وحارة وحلوة. أساسي للطبخ الآسيوي وإضافة الدفء العطري.',
-    image: 'https://images.pexels.com/photos/4198946/pexels-photo-4198946.jpeg',
-    category: 'retail',
-    subcategory: 'standard'
+    name: 'Ginger Ground',
+    nameAr: 'زنجبيل مطحون',
+    description: 'Ginger Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'زنجبيل مطحون من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/giner.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
-
-  // Retail - Sauces
   {
     id: '13',
-    name: 'Seafood Seasoning',
-    nameAr: 'توابل المأكولات البحرية',
-    description: 'Zesty, peppery blend with celery seed, paprika, and red pepper. Adds bold flavor to seafood dishes.',
-    descriptionAr: 'خليط لاذع وحار مع بذور الكرفس والبابريكا والفلفل الأحمر. يضيف نكهة جريئة لأطباق المأكولات البحرية.',
-    image: 'https://images.pexels.com/photos/4198948/pexels-photo-4198948.jpeg',
-    category: 'retail',
-    subcategory: 'sauces'
+    name: 'Italian Seasoning',
+    nameAr: 'بهار ايطالية',
+    description: 'Italian Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'بهار ايطالية من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/italian.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '14',
-    name: 'Basil & Oregano Sauce Blend',
-    nameAr: 'خليط صلصة الريحان والأوريغانو',
-    description: 'Mediterranean blend perfect for pasta sauces, pizza, and roasted vegetables with sweet peppery notes.',
-    descriptionAr: 'خليط البحر الأبيض المتوسط المثالي لصلصات المعكرونة والبيتزا والخضار المشوية مع نكهات حلوة وحارة.',
-    image: 'https://images.pexels.com/photos/4198950/pexels-photo-4198950.jpeg',
-    category: 'retail',
-    subcategory: 'sauces'
+    name: 'Lime pepper',
+    nameAr: 'لايم مع فلفل',
+    description: 'Lime pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'لايم مع فلفل من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/lime.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
-
-  // Retail - Special
   {
     id: '15',
-    name: 'Exotic Spices Collection',
-    nameAr: 'مجموعة التوابل الغريبة',
-    description: 'Rare and exotic spices from remote regions, perfect for adventurous cooking and gourmet dishes.',
-    descriptionAr: 'توابل نادرة وغريبة من مناطق نائية، مثالية للطبخ المغامر والأطباق الفاخرة.',
-    image: 'https://images.pexels.com/photos/4198951/pexels-photo-4198951.jpeg',
-    category: 'retail',
-    subcategory: 'special'
+    name: 'Mango Pepper',
+    nameAr: 'منجو مع فلفل',
+    description: 'Mango Pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'منجو مع فلفل من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/mango.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '16',
-    name: 'Asian Spice Blends',
-    nameAr: 'خلطات التوابل الآسيوية',
-    description: 'Traditional spice blends from across Asia, crafted using ancient recipes and premium ingredients.',
-    descriptionAr: 'خلطات التوابل التقليدية من جميع أنحاء آسيا، مصنوعة باستخدام وصفات قديمة ومكونات فاخرة.',
-    image: 'https://images.pexels.com/photos/4198952/pexels-photo-4198952.jpeg',
-    category: 'retail',
-    subcategory: 'special'
+    name: 'Nutmeg Ground',
+    nameAr: 'جوزة الطيب',
+    description: 'Nutmeg Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'جوزة الطيب من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/nutmeg.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '17',
-    name: 'Orange Pepper Premium',
-    nameAr: 'الفلفل البرتقالي المميز',
-    description: 'Tangy and mildly spicy blend with black pepper and orange peel. Provides bright, citrusy zing to dishes.',
-    descriptionAr: 'خليط لاذع وحار قليلاً مع الفلفل الأسود وقشر البرتقال. يوفر نكهة حمضية مشرقة للأطباق.',
-    image: 'https://images.pexels.com/photos/4198953/pexels-photo-4198953.jpeg',
-    category: 'retail',
-    subcategory: 'special'
+    name: 'Onion Granulated',
+    nameAr: 'بصل مطحون',
+    description: 'Onion Granulated is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'بصل مطحون من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/onion.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
-
-  // Retail - Economy
   {
     id: '18',
-    name: 'Cayenne Pepper',
-    nameAr: 'فلفل الكايين',
-    description: 'Fine ground powder from dried red chili peppers. Delivers clean, sharp heat to increase spiciness.',
-    descriptionAr: 'بودرة مطحونة ناعمة من الفلفل الحار الأحمر المجفف. تقدم حرارة نظيفة وحادة لزيادة الحرارة.',
-    image: 'https://images.pexels.com/photos/4198954/pexels-photo-4198954.jpeg',
-    category: 'retail',
-    subcategory: 'economy'
+    name: 'Onion Powder',
+    nameAr: 'بصل بودرة',
+    description: 'Onion Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'بصل بودرة من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/onion-powder.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '19',
-    name: 'Red Pepper Flakes',
-    nameAr: 'رقائق الفلفل الأحمر',
-    description: 'Crushed red pepper flakes add heat and flavor. Perfect for pizza, pasta, and marinades.',
-    descriptionAr: 'رقائق الفلفل الأحمر المكسر تضيف حرارة ونكهة. مثالية للبيتزا والمعكرونة والمخللات.',
-    image: 'https://images.pexels.com/photos/4198955/pexels-photo-4198955.jpeg',
-    category: 'retail',
-    subcategory: 'economy'
+    name: 'Orange Pepper',
+    nameAr: 'برتقال مع فلفل',
+    description: 'Orange Pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
+    descriptionAr: 'برتقال مع فلفل من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.',
+    image: '../img/Orange-Pepper.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '20',
-    name: 'White Pepper',
-    nameAr: 'الفلفل الأبيض',
-    description: 'Milder than black pepper with clean, sharp flavor. Ideal for light-colored dishes and cream sauces.',
-    descriptionAr: 'أخف من الفلفل الأسود مع نكهة نظيفة وحادة. مثالي للأطباق فاتحة اللون والصلصات الكريمية.',
-    image: 'https://images.pexels.com/photos/4198956/pexels-photo-4198956.jpeg',
-    category: 'retail',
-    subcategory: 'economy'
+    name: 'Oregano Whole',
+    nameAr: 'اوريغانو',
+    description: `Oregano Whole${description}`,
+    descriptionAr: `اوريغانو${descriptionAr}`,
+    image: '../img/oregano.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
-
-  // Retail - Mexican Line
   {
     id: '21',
-    name: 'Chile and Lime',
-    nameAr: 'الفلفل الحار والليمون',
-    description: 'Perfect combination of spicy chile and tangy lime. Great for Mexican cuisine and grilled meats.',
-    descriptionAr: 'مزيج مثالي من الفلفل الحار الحار والليمون اللاذع. رائع للمأكولات المكسيكية واللحوم المشوية.',
-    image: 'https://images.pexels.com/photos/4198957/pexels-photo-4198957.jpeg',
-    category: 'retail',
-    subcategory: 'mexican'
+    name: 'Paprika',
+    nameAr: 'بابريكا',
+    description: `Paprika${description}`,
+    descriptionAr: `بابريكا${descriptionAr}`,
+    image: '../img/paprika.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '22',
-    name: 'Fajita Seasoning',
-    nameAr: 'توابل الفاهيتا',
-    description: 'Tex-Mex blend of chili peppers, cumin, paprika, and garlic. Perfect for authentic Mexican fajitas.',
-    descriptionAr: 'خليط تكساس مكسيكي من الفلفل الحار والكمون والبابريكا والثوم. مثالي للفاهيتا المكسيكية الأصيلة.',
-    image: 'https://images.pexels.com/photos/4198958/pexels-photo-4198958.jpeg',
-    category: 'retail',
-    subcategory: 'mexican'
+    name: 'Paprika Smoked',
+    nameAr: 'بابريكا مدخن',
+    description: `Paprika Smoked${description}`,
+    descriptionAr: `بابريكا مدخن${descriptionAr}`,
+    image: '../img/paprika-smoked.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '23',
-    name: 'Chipotle',
-    nameAr: 'الشيبوتلي',
-    description: 'Smoke-dried jalapeño peppers with rich, smoky flavor. Perfect for BBQ and Mexican dishes.',
-    descriptionAr: 'فلفل الخالابينو المجفف بالدخان مع نكهة دخانية غنية. مثالي للباربكيو والأطباق المكسيكية.',
-    image: 'https://images.pexels.com/photos/4198959/pexels-photo-4198959.jpeg',
-    category: 'retail',
-    subcategory: 'mexican'
+    name: 'Parsley Flakes',
+    nameAr: 'بقدونس مجففة',
+    description: `Parsley Flakes${description}`,
+    descriptionAr: `بقدونس مجففة${descriptionAr}`,
+    image: '../img/parsley.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '24',
-    name: 'Lime Pepper',
-    nameAr: 'فلفل الليمون',
-    description: 'Zesty blend of black pepper and tangy lime. Excellent for seafood, chicken, and vegetables.',
-    descriptionAr: 'خليط لاذع من الفلفل الأسود والليمون اللاذع. ممتاز للمأكولات البحرية والدجاج والخضار.',
-    image: 'https://images.pexels.com/photos/4198960/pexels-photo-4198960.jpeg',
-    category: 'retail',
-    subcategory: 'mexican'
+    name: 'Pepper Black Butcher Block',
+    nameAr: 'فلفل اسود خشن',
+    description: `Pepper Black Butcher Block${description}`,
+    descriptionAr: `فلفل اسود خشن${descriptionAr}`,
+    image: '../img/pepper-black.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '25',
-    name: 'Sazón',
-    nameAr: 'السازون',
-    description: 'Vibrant Latin American seasoning with savory, umami-rich flavor. Gives distinctive taste to rice and stews.',
-    descriptionAr: 'توابل أمريكا اللاتينية النابضة بالحياة مع نكهة مالحة وغنية بالأومامي. تعطي طعماً مميزاً للأرز والحساء.',
-    image: 'https://images.pexels.com/photos/4198961/pexels-photo-4198961.jpeg',
-    category: 'retail',
-    subcategory: 'mexican'
+    name: 'Pepper Black Ground',
+    nameAr: 'فلفل اسود مطحون',
+    description: `Pepper Black Ground${description}`,
+    descriptionAr: `فلفل اسود مطحون${descriptionAr}`,
+    image: '../img/pepper-black-ground.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '26',
-    name: 'Mango Pepper',
-    nameAr: 'فلفل المانجو',
-    description: 'Unique blend combining sweet mango flavor with spicy pepper heat. Perfect for tropical Mexican dishes.',
-    descriptionAr: 'خليط فريد يجمع بين نكهة المانجو الحلوة وحرارة الفلفل الحار. مثالي للأطباق المكسيكية الاستوائية.',
-    image: 'https://images.pexels.com/photos/4198962/pexels-photo-4198962.jpeg',
-    category: 'retail',
-    subcategory: 'mexican'
+    name: 'Pepper Black Ground Fine',
+    nameAr: 'فلفل اسود ناعم',
+    description: `Pepper Black Ground Fine${description}`,
+    descriptionAr: `فلفل اسود ناعم${descriptionAr}`,
+    image: '../img/Pepper-Black-Ground-Fine.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
-
-  // Additional Standard Products
   {
     id: '27',
-    name: 'Poultry Seasoning',
-    nameAr: 'توابل الدواجن',
-    description: 'Aromatic blend of sage, thyme, rosemary, and marjoram. Enhances chicken and turkey with classic savory notes.',
-    descriptionAr: 'خليط عطري من الميرمية والزعتر وإكليل الجبل والمردقوش. يعزز الدجاج والديك الرومي بنكهات مالحة كلاسيكية.',
-    image: 'https://images.pexels.com/photos/4198963/pexels-photo-4198963.jpeg',
-    category: 'retail',
-    subcategory: 'standard'
+    name: 'Pepper Pink Whole',
+    nameAr: 'فلفل وردي',
+    description: `Pepper Pink Whole${description}`,
+    descriptionAr: `فلفل وردي${descriptionAr}`,
+    image: '../img/Pepper-Pink-Whole.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
   },
   {
     id: '28',
-    name: 'Canadian Steak Seasoning',
-    nameAr: 'توابل الستيك الكندية',
-    description: 'Bold blend of coarse spices with black pepper, dill seed, and garlic. Creates savory crust on steaks.',
-    descriptionAr: 'خليط جريء من التوابل الخشنة مع الفلفل الأسود وبذور الشبت والثوم. ينشئ قشرة مالحة على الستيك.',
-    image: 'https://images.pexels.com/photos/4198964/pexels-photo-4198964.jpeg',
-    category: 'retail',
-    subcategory: 'standard'
-  }
+    name: 'Pepper Red - Ground (Cayenne)',
+    nameAr: 'كايين',
+    description: `Pepper Red - Ground (Cayenne)${description}`,
+    descriptionAr: `كايين${descriptionAr}`,
+    image: '../img/Pepper-Red.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '29',
+    name: 'Pepper Red Crushed',
+    nameAr: 'فلفل احمر مبروش',
+    description: `Pepper Red Crushed${description}`,
+    descriptionAr: `فلفل احمر مبروش${descriptionAr}`,
+    image: '../img/Pepper-Red-Crushed.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '30',
+    name: 'Pepper White Ground',
+    nameAr: 'فلفل ابيض مطحون',
+    description: `Pepper White Ground${description}`,
+    descriptionAr: `فلفل ابيض مطحون${descriptionAr}`,
+    image: '../img/Pepper-White-Ground.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '31',
+    name: 'Poultry Seasoning',
+    nameAr: 'بهار دجاج',
+    description: `Poultry Seasoning${description}`,
+    descriptionAr: `بهار دجاج${descriptionAr}`,
+    image: '../img/Poultry-Seasoning.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '32',
+    name: 'Rosemary Leaves',
+    nameAr: 'روزماري',
+    description: `Rosemary Leaves${description}`,
+    descriptionAr: `روزماري${descriptionAr}`,
+    image: '../img/Rosemary-Leaves.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '33',
+    name: 'Rotisserie Chicken Seasoning',
+    nameAr: 'دجاج مشوي',
+    description: `Rotisserie Chicken Seasoning${description}`,
+    descriptionAr: `دجاج مشوي${descriptionAr}`,
+    image: '../img/Rotisserie-Chicken-Seasoning.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '34',
+    name: 'Sazón Tropical ® w/ Annatto & Coriander',
+    nameAr: 'تروبيكال',
+    description: `Sazón Tropical ® w/ Annatto & Coriander${description}`,
+    descriptionAr: `تروبيكال${descriptionAr}`,
+    image: '../img/Sazon-with-Coriander-And-Annatto.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '35',
+    name: 'Seafood Seasoning Creole Blend',
+    nameAr: 'سمك',
+    description: `Seafood Seasoning Creole Blend${description}`,
+    descriptionAr: `سمك${descriptionAr}`,
+    image: '../img/Seafood-Seasoning-Creole-Blend.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '36',
+    name: 'Seasoned Salt',
+    nameAr: 'بهار بطاطا',
+    description: `Seasoned Salt${description}`,
+    descriptionAr: `بهار بطاطا${descriptionAr}`,
+    image: '../img/Seasoned-Salt.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '37',
+    name: 'Steak Seasoning',
+    nameAr: 'ستيك',
+    description: `Steak Seasoning${description}`,
+    descriptionAr: `ستيك${descriptionAr}`,
+    image: '../img/Steak-Seasoning.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+  {
+    id: '38',
+    name: 'Turmeric Ground',
+    nameAr: 'كركم',
+    description: `Turmeric Ground${description}`,
+    descriptionAr: `كركم${descriptionAr}`,
+    image: '../img/Turmeric-Ground.jpg',
+    category: 'wholesale',
+    subcategory: 'pints',
+    packaging: 'Pint',
+    packagingAr: 'علب'
+  },
+
+  // // Wholesale - Gallons (6/carton)
+  // {
+  //   id: '4',
+  //   name: 'Garlic Powder',
+  //   nameAr: 'بودرة الثوم',
+  //   description: 'The dried, ground form of garlic cloves. Offers pungent, savory flavor for seasoning vegetables, sauces and rubs.',
+  //   descriptionAr: 'الشكل المجفف والمطحون من فصوص الثوم. يقدم نكهة لاذعة ومالحة لتتبيل الخضار والصلصات والخلطات.',
+  //   image: 'https://images.pexels.com/photos/4198934/pexels-photo-4198934.jpeg',
+  //   category: 'wholesale',
+  //   subcategory: 'gallons',
+  //   packaging: 'Gallons (6/carton)',
+  //   packagingAr: 'غالون (6/كرتونة)'
+  // },
+  // {
+  //   id: '5',
+  //   name: 'Chili Powder',
+  //   nameAr: 'بودرة الفلفل الحار',
+  //   description: 'Vibrant blend of ground chili peppers with cumin, oregano, and garlic. Key ingredient for chili con carne.',
+  //   descriptionAr: 'خليط نابض من الفلفل الحار المطحون مع الكمون والأوريغانو والثوم. المكون الرئيسي للفلفل الحار بالكارني.',
+  //   image: 'https://images.pexels.com/photos/4198941/pexels-photo-4198941.jpeg',
+  //   category: 'wholesale',
+  //   subcategory: 'gallons',
+  //   packaging: 'Gallons (6/carton)',
+  //   packagingAr: 'غالون (6/كرتونة)'
+  // },
+  // {
+  //   id: '6',
+  //   name: 'Cajun Seasoning',
+  //   nameAr: 'توابل الكاجن',
+  //   description: 'Bold Louisiana blend of paprika, cayenne, garlic, and herbs. Perfect for blackened fish and Creole cooking.',
+  //   descriptionAr: 'خليط لويزيانا الجريء من البابريكا والكايين والثوم والأعشاب. مثالي للسمك المحمص وطبخ الكريول.',
+  //   image: 'https://images.pexels.com/photos/4198944/pexels-photo-4198944.jpeg',
+  //   category: 'wholesale',
+  //   subcategory: 'gallons',
+  //   packaging: 'Gallons (6/carton)',
+  //   packagingAr: 'غالون (6/كرتونة)'
+  // },
+
+  // // Wholesale - Buckets (1/carton)
+  // {
+  //   id: '7',
+  //   name: 'Salt',
+  //   nameAr: 'الملح',
+  //   description: 'Essential mineral used to enhance and balance flavors. Fundamental seasoning in all cuisines worldwide.',
+  //   descriptionAr: 'معدن أساسي يستخدم لتعزيز وتوازن النكهات. توابل أساسية في جميع المأكولات في العالم.',
+  //   image: 'https://images.pexels.com/photos/4198932/pexels-photo-4198932.jpeg',
+  //   category: 'wholesale',
+  //   subcategory: 'buckets',
+  //   packaging: 'Buckets (1/carton)',
+  //   packagingAr: 'دلو (1/كرتونة)'
+  // },
+  // {
+  //   id: '8',
+  //   name: 'Onion Powder',
+  //   nameAr: 'بودرة البصل',
+  //   description: 'Concentrated onion flavor without the tears. Essential for dry rubs and adding savory depth to dishes.',
+  //   descriptionAr: 'نكهة البصل المركزة بدون دموع. أساسي للخلطات الجافة وإضافة عمق مالح للأطباق.',
+  //   image: 'https://images.pexels.com/photos/4198933/pexels-photo-4198933.jpeg',
+  //   category: 'wholesale',
+  //   subcategory: 'buckets',
+  //   packaging: 'Buckets (1/carton)',
+  //   packagingAr: 'دلو (1/كرتونة)'
+  // },
+
+  // // Retail - Standard
+  // {
+  //   id: '9',
+  //   name: 'Cinnamon',
+  //   nameAr: 'القرفة',
+  //   description: 'Warm, sweet spice with fragrant aroma. Staple in baking and adds depth to savory Moroccan and Middle Eastern dishes.',
+  //   descriptionAr: 'توابل دافئة وحلوة ذات رائحة عطرة. أساسي في الخبز ويضيف عمقاً للأطباق المالحة المغربية والشرق أوسطية.',
+  //   image: 'https://images.pexels.com/photos/4198949/pexels-photo-4198949.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'standard'
+  // },
+  // {
+  //   id: '10',
+  //   name: 'Oregano',
+  //   nameAr: 'الأوريغانو',
+  //   description: 'Classic Mediterranean herb with warm, aromatic flavor. Essential for pizza, pasta sauces, and Italian cuisine.',
+  //   descriptionAr: 'عشب البحر الأبيض المتوسط الكلاسيكي بنكهة دافئة وعطرة. أساسي للبيتزا وصلصات المعكرونة والمأكولات الإيطالية.',
+  //   image: 'https://images.pexels.com/photos/4198947/pexels-photo-4198947.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'standard'
+  // },
+  // {
+  //   id: '11',
+  //   name: 'Rosemary',
+  //   nameAr: 'إكليل الجبل',
+  //   description: 'Aromatic pine-like herb with robust, earthy flavor. Excellent with roasted meats and Mediterranean dishes.',
+  //   descriptionAr: 'عشب عطري يشبه الصنوبر بنكهة قوية وترابية. ممتاز مع اللحوم المشوية وأطباق البحر الأبيض المتوسط.',
+  //   image: 'https://images.pexels.com/photos/4198945/pexels-photo-4198945.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'standard'
+  // },
+  // {
+  //   id: '12',
+  //   name: 'Ginger',
+  //   nameAr: 'الزنجبيل',
+  //   description: 'Ground ginger provides warm, spicy-sweet flavor. Essential for Asian cooking and adding aromatic warmth.',
+  //   descriptionAr: 'الزنجبيل المطحون يقدم نكهة دافئة وحارة وحلوة. أساسي للطبخ الآسيوي وإضافة الدفء العطري.',
+  //   image: 'https://images.pexels.com/photos/4198946/pexels-photo-4198946.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'standard'
+  // },
+
+  // // Retail - Sauces
+  // {
+  //   id: '13',
+  //   name: 'Seafood Seasoning',
+  //   nameAr: 'توابل المأكولات البحرية',
+  //   description: 'Zesty, peppery blend with celery seed, paprika, and red pepper. Adds bold flavor to seafood dishes.',
+  //   descriptionAr: 'خليط لاذع وحار مع بذور الكرفس والبابريكا والفلفل الأحمر. يضيف نكهة جريئة لأطباق المأكولات البحرية.',
+  //   image: 'https://images.pexels.com/photos/4198948/pexels-photo-4198948.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'sauces'
+  // },
+  // {
+  //   id: '14',
+  //   name: 'Basil & Oregano Sauce Blend',
+  //   nameAr: 'خليط صلصة الريحان والأوريغانو',
+  //   description: 'Mediterranean blend perfect for pasta sauces, pizza, and roasted vegetables with sweet peppery notes.',
+  //   descriptionAr: 'خليط البحر الأبيض المتوسط المثالي لصلصات المعكرونة والبيتزا والخضار المشوية مع نكهات حلوة وحارة.',
+  //   image: 'https://images.pexels.com/photos/4198950/pexels-photo-4198950.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'sauces'
+  // },
+
+  // // Retail - Special
+  // {
+  //   id: '15',
+  //   name: 'Exotic Spices Collection',
+  //   nameAr: 'مجموعة التوابل الغريبة',
+  //   description: 'Rare and exotic spices from remote regions, perfect for adventurous cooking and gourmet dishes.',
+  //   descriptionAr: 'توابل نادرة وغريبة من مناطق نائية، مثالية للطبخ المغامر والأطباق الفاخرة.',
+  //   image: 'https://images.pexels.com/photos/4198951/pexels-photo-4198951.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'special'
+  // },
+  // {
+  //   id: '16',
+  //   name: 'Asian Spice Blends',
+  //   nameAr: 'خلطات التوابل الآسيوية',
+  //   description: 'Traditional spice blends from across Asia, crafted using ancient recipes and premium ingredients.',
+  //   descriptionAr: 'خلطات التوابل التقليدية من جميع أنحاء آسيا، مصنوعة باستخدام وصفات قديمة ومكونات فاخرة.',
+  //   image: 'https://images.pexels.com/photos/4198952/pexels-photo-4198952.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'special'
+  // },
+  // {
+  //   id: '17',
+  //   name: 'Orange Pepper Premium',
+  //   nameAr: 'الفلفل البرتقالي المميز',
+  //   description: 'Tangy and mildly spicy blend with black pepper and orange peel. Provides bright, citrusy zing to dishes.',
+  //   descriptionAr: 'خليط لاذع وحار قليلاً مع الفلفل الأسود وقشر البرتقال. يوفر نكهة حمضية مشرقة للأطباق.',
+  //   image: 'https://images.pexels.com/photos/4198953/pexels-photo-4198953.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'special'
+  // },
+
+  // // Retail - Economy
+  // {
+  //   id: '18',
+  //   name: 'Cayenne Pepper',
+  //   nameAr: 'فلفل الكايين',
+  //   description: 'Fine ground powder from dried red chili peppers. Delivers clean, sharp heat to increase spiciness.',
+  //   descriptionAr: 'بودرة مطحونة ناعمة من الفلفل الحار الأحمر المجفف. تقدم حرارة نظيفة وحادة لزيادة الحرارة.',
+  //   image: 'https://images.pexels.com/photos/4198954/pexels-photo-4198954.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'economy'
+  // },
+  // {
+  //   id: '19',
+  //   name: 'Red Pepper Flakes',
+  //   nameAr: 'رقائق الفلفل الأحمر',
+  //   description: 'Crushed red pepper flakes add heat and flavor. Perfect for pizza, pasta, and marinades.',
+  //   descriptionAr: 'رقائق الفلفل الأحمر المكسر تضيف حرارة ونكهة. مثالية للبيتزا والمعكرونة والمخللات.',
+  //   image: 'https://images.pexels.com/photos/4198955/pexels-photo-4198955.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'economy'
+  // },
+  // {
+  //   id: '20',
+  //   name: 'White Pepper',
+  //   nameAr: 'الفلفل الأبيض',
+  //   description: 'Milder than black pepper with clean, sharp flavor. Ideal for light-colored dishes and cream sauces.',
+  //   descriptionAr: 'أخف من الفلفل الأسود مع نكهة نظيفة وحادة. مثالي للأطباق فاتحة اللون والصلصات الكريمية.',
+  //   image: 'https://images.pexels.com/photos/4198956/pexels-photo-4198956.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'economy'
+  // },
+
+  // // Retail - Mexican Line
+  // {
+  //   id: '21',
+  //   name: 'Chile and Lime',
+  //   nameAr: 'الفلفل الحار والليمون',
+  //   description: 'Perfect combination of spicy chile and tangy lime. Great for Mexican cuisine and grilled meats.',
+  //   descriptionAr: 'مزيج مثالي من الفلفل الحار الحار والليمون اللاذع. رائع للمأكولات المكسيكية واللحوم المشوية.',
+  //   image: 'https://images.pexels.com/photos/4198957/pexels-photo-4198957.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'mexican'
+  // },
+  // {
+  //   id: '22',
+  //   name: 'Fajita Seasoning',
+  //   nameAr: 'توابل الفاهيتا',
+  //   description: 'Tex-Mex blend of chili peppers, cumin, paprika, and garlic. Perfect for authentic Mexican fajitas.',
+  //   descriptionAr: 'خليط تكساس مكسيكي من الفلفل الحار والكمون والبابريكا والثوم. مثالي للفاهيتا المكسيكية الأصيلة.',
+  //   image: 'https://images.pexels.com/photos/4198958/pexels-photo-4198958.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'mexican'
+  // },
+  // {
+  //   id: '23',
+  //   name: 'Chipotle',
+  //   nameAr: 'الشيبوتلي',
+  //   description: 'Smoke-dried jalapeño peppers with rich, smoky flavor. Perfect for BBQ and Mexican dishes.',
+  //   descriptionAr: 'فلفل الخالابينو المجفف بالدخان مع نكهة دخانية غنية. مثالي للباربكيو والأطباق المكسيكية.',
+  //   image: 'https://images.pexels.com/photos/4198959/pexels-photo-4198959.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'mexican'
+  // },
+  // {
+  //   id: '24',
+  //   name: 'Lime Pepper',
+  //   nameAr: 'فلفل الليمون',
+  //   description: 'Zesty blend of black pepper and tangy lime. Excellent for seafood, chicken, and vegetables.',
+  //   descriptionAr: 'خليط لاذع من الفلفل الأسود والليمون اللاذع. ممتاز للمأكولات البحرية والدجاج والخضار.',
+  //   image: 'https://images.pexels.com/photos/4198960/pexels-photo-4198960.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'mexican'
+  // },
+  // {
+  //   id: '25',
+  //   name: 'Sazón',
+  //   nameAr: 'السازون',
+  //   description: 'Vibrant Latin American seasoning with savory, umami-rich flavor. Gives distinctive taste to rice and stews.',
+  //   descriptionAr: 'توابل أمريكا اللاتينية النابضة بالحياة مع نكهة مالحة وغنية بالأومامي. تعطي طعماً مميزاً للأرز والحساء.',
+  //   image: 'https://images.pexels.com/photos/4198961/pexels-photo-4198961.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'mexican'
+  // },
+  // {
+  //   id: '26',
+  //   name: 'Mango Pepper',
+  //   nameAr: 'فلفل المانجو',
+  //   description: 'Unique blend combining sweet mango flavor with spicy pepper heat. Perfect for tropical Mexican dishes.',
+  //   descriptionAr: 'خليط فريد يجمع بين نكهة المانجو الحلوة وحرارة الفلفل الحار. مثالي للأطباق المكسيكية الاستوائية.',
+  //   image: 'https://images.pexels.com/photos/4198962/pexels-photo-4198962.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'mexican'
+  // },
+
+  // // Additional Standard Products
+  // {
+  //   id: '27',
+  //   name: 'Poultry Seasoning',
+  //   nameAr: 'توابل الدواجن',
+  //   description: 'Aromatic blend of sage, thyme, rosemary, and marjoram. Enhances chicken and turkey with classic savory notes.',
+  //   descriptionAr: 'خليط عطري من الميرمية والزعتر وإكليل الجبل والمردقوش. يعزز الدجاج والديك الرومي بنكهات مالحة كلاسيكية.',
+  //   image: 'https://images.pexels.com/photos/4198963/pexels-photo-4198963.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'standard'
+  // },
+  // {
+  //   id: '28',
+  //   name: 'Canadian Steak Seasoning',
+  //   nameAr: 'توابل الستيك الكندية',
+  //   description: 'Bold blend of coarse spices with black pepper, dill seed, and garlic. Creates savory crust on steaks.',
+  //   descriptionAr: 'خليط جريء من التوابل الخشنة مع الفلفل الأسود وبذور الشبت والثوم. ينشئ قشرة مالحة على الستيك.',
+  //   image: 'https://images.pexels.com/photos/4198964/pexels-photo-4198964.jpeg',
+  //   category: 'retail',
+  //   subcategory: 'standard'
+  // }
 ];
 
 // Global variables
@@ -497,7 +934,7 @@ function createProductCard(product) {
 function getSubcategoryLabel(subcategory, isArabic) {
   const labels = {
     en: {
-      pints: 'Pints',
+      pints: 'Pint',
       gallons: 'Gallons',
       buckets: 'Buckets',
       standard: 'Standard',
@@ -507,7 +944,7 @@ function getSubcategoryLabel(subcategory, isArabic) {
       mexican: 'Mexican'
     },
     ar: {
-      pints: 'باينت',
+      pints: 'علب',
       gallons: 'غالون',
       buckets: 'دلو',
       standard: 'ستاندر',
@@ -570,7 +1007,7 @@ function updateTranslations(lang) {
       all_products: 'All Products',
       wholesale: 'Wholesale',
       retail: 'Retail',
-      pints: 'Pints (24/carton)',
+      pints: 'Pint',
       gallons: 'Gallons (6/carton)',
       buckets: 'Buckets (1/carton)',
       standard: 'Standard',
@@ -597,7 +1034,7 @@ function updateTranslations(lang) {
       all_products: 'جميع المنتجات',
       wholesale: 'البيع بالجملة',
       retail: 'البيع بالتجزئة',
-      pints: 'باينت (24/كرتونة)',
+      pints: 'علب',
       gallons: 'غالون (6/كرتونة)',
       buckets: 'دلو (1/كرتونة)',
       standard: 'ستاندر',
