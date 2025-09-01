@@ -12,7 +12,7 @@ const products = [
     nameAr: 'ريحان',
     description: 'Basil is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
     descriptionAr: `ريحان${descriptionAr}.`,
-    image: '/img/basil.jpg',
+    image: 'img/basil.jpg',
     category: 'wholesale',
     subcategory: 'pints',
     packaging: 'Pint',
