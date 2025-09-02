@@ -23,9 +23,9 @@ const translations = {
     hero_cta_secondary: "Get In Touch",
 
     // Features
-    feature_organic_title: "100% Organic",
+    feature_organic_title: "Selected Organic Spices",
     feature_organic_desc:
-      "Certified organic spices without any harmful chemicals or pesticides.",
+      "Some of our products are certified organic and free from harmful chemicals or pesticides.",
     feature_global_title: "Global Sourcing",
     feature_global_desc:
       "Direct partnerships with farmers from around the world for authentic flavors.",
@@ -86,16 +86,16 @@ const translations = {
     // Individual Spices (these keys were not used in index.html, so they can be removed or restructured)
     curry_title: "Curry Powder",
     curry_description:
-      "A versatile blend of aromatic spices like turmeric, coriander, and cumin. It's the cornerstone of many Indian, Thai, and Caribbean dishes, providing a warm, complex flavor profile.",
+      "Curry Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.",
     seafood_seasoning_title: "Seafood Seasoning",
     seafood_seasoning_description:
       "A zesty, peppery blend typically featuring celery seed, paprika, salt, and red pepper. It adds a signature bold flavor to shrimp, crab, fish, and other seafood.",
-    cumin_title: "Cumin",
+    cumin_title: "Cumin Seed Ground",
     cumin_description:
-      "A warm, earthy spice with a slightly bitter, peppery taste. Cumin is a key ingredient in Mexican, Middle Eastern, and Indian cuisines, essential for chili and taco blends.",
+      "Cumin Seed Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.",
     paprika_title: "Paprika",
     paprika_description:
-      "Made from ground red peppers, paprika ranges from sweet and mild to hot and smoky. It adds vibrant color and a gentle, sweet flavor to roasted meats, stews, and sauces.",
+      "Paprika is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.",
     basil_origano_title: "Basil & Oregano",
     basil_origano_description:
       "A classic Mediterranean blend combining the sweet, peppery notes of basil with the robust, earthy flavor of oregano. Perfect for pasta sauces, pizza, and roasted vegetables.",
@@ -207,7 +207,10 @@ const translations = {
     spices_page_title: "Our Premium Spices",
     spices_page_subtitle:
       "Discover the world of flavors with our carefully selected spices",
-  },
+      // Marketing Content
+    marketing_tagline: "Quality that satisfies, a taste that entices.",
+   
+    },
 
   ar: {
     // Name Site
@@ -232,9 +235,9 @@ const translations = {
     hero_cta_secondary: "تواصل معنا",
 
     // Features
-    feature_organic_title: "١٠٠٪ عضوي",
+    feature_organic_title: "توابل عضوية مختارة",
     feature_organic_desc:
-      "توابل عضوية معتمدة بدون أي مواد كيميائية ضارة أو مبيدات حشرية.",
+      "بعض منتجاتنا عضوية ومعتمدة وخالية من أي مواد كيميائية ضارة أو مبيدات حشرية.",
     feature_global_title: "مصادر عالمية",
     feature_global_desc:
       "شراكات مباشرة مع المزارعين من جميع أنحاء العالم للحصول على نكهات أصيلة.",
@@ -291,18 +294,18 @@ const translations = {
       "خلطات توابل تقليدية من جميع أنحاء آسيا، مصنوعة باستخدام وصفات قديمة.",
 
     // Individual Spices (unreferenced in HTML, can be removed)
-    curry_title: "مسحوق الكاري",
+    curry_title: "كاري بودرة",
     curry_description:
-      "مزيج متعدد الاستخدامات من التوابل العطرية مثل الكركم والكزبرة والكمون. إنه حجر الزاوية في العديد من الأطباق الهندية والتايلاندية والكاريبية، مما يوفر نكهة دافئة ومعقدة.",
+      "كاري بودرة من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.",
     seafood_seasoning_title: "بهارات المأكولات البحرية",
     seafood_seasoning_description:
       "مزيج حار وحاد يتميز عادة ببذور الكرفس والبابريكا والملح والفلفل الأحمر. يضيف نكهة جريئة مميزة للجمبري وسرطان البحر والأسماك والمأكولات البحرية الأخرى.",
-    cumin_title: "الكمون",
+    cumin_title: "كمون مطحون",
     cumin_description:
-      "توابل ترابية دافئة ذات طعم مرير وفلفلي قليلاً. الكمون مكون رئيسي في المطابخ المكسيكية والشرق أوسطية والهندية، وهو ضروري لخلطات الفلفل الحار والتاكو.",
+      "كمون مطحون من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.",
     paprika_title: "البابريكا",
     paprika_description:
-      "مصنوعة من الفلفل الأحمر المطحون، تتراوح نكهة البابريكا من الحلو والخفيف إلى الحار والمدخن. يضيف لونًا نابضًا بالحياة ونكهة حلوة ولطيفة إلى اللحوم المشوية واليخنات والصلصات.",
+      "بابريكا من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.",
     basil_origano_title: "الريحان والأوريجانو",
     basil_origano_description:
       "مزيج متوسطي كلاسيكي يجمع بين النكهات الحلوة والفلفلية للريحان مع النكهة القوية والترابية للأوريجانو. مثالي لصلصات المعكرونة والبيتزا والخضروات المشوية.",
@@ -413,6 +416,10 @@ const translations = {
     //
     spices_page_title: "توابلنا الفاخرة",
     spices_page_subtitle: "اكتشف عالم النكهات مع توابلنا المختارة بعناية",
+
+     // محتوى تسويقي جديد
+    marketing_tagline: "جودة تغنيك وطعم يغريك",
+  
   },
 };
 
