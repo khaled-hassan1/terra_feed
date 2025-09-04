@@ -26,6 +26,7 @@ body {
   font-family: "Cairo", sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
+  background-color: #fff9ed !important;
 }
 
 /* Typography */
@@ -306,12 +307,16 @@ html[dir="rtl"] .hero-section {
 }
 
 .product-card .card-body {
-  padding: 1.5rem;
+  padding: 0 0 1.5rem;
 }
 
 .product-card .card-title {
-  color: var(--primary-color);
   font-weight: 600;
+  font-size: larger;
+  color: var(--dark-color);
+  margin: 0.75rem;
+  padding-top: 25px;
+
 }
 
 /* Contact Section */
@@ -816,7 +821,8 @@ html {
   .img-fluid {
     margin-top: 25%;
   }
-  footer p{
+
+  footer p {
     text-align: center !important;
   }
 }
@@ -1050,6 +1056,7 @@ footer p a {
   color: var(--primary-color);
   text-decoration: none;
 }
+
 footer p a:hover {
   color: var(--secondary-color);
   text-decoration: underline;
@@ -1059,4 +1066,70 @@ footer p a:hover {
   direction: ltr;
   unicode-bidi: plaintext;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.radius {
+  border-radius: 50px 0 50px 0;
+
+}
+
+.t {
+  background: transparent;
+  background-color: #fecf07;
+  padding: 12px 24px;
+  border-radius: 12px 0 12px 0;
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Lexend', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 12px;
+  font-size: 12px;
+
+}
+
+.t:hover {
+  background-color: #e4ab11;
+}
+
+
+/* Category Filter Buttons */
+.category-btn {
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-btn.active {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.subcategory-btn {
+  border-radius: 8px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.subcategory-btn:hover {
+  transform: translateX(5px);
+}
+
+.subcategory-btn.active {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: white !important;
 }

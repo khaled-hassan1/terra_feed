@@ -2,12 +2,20 @@
 
 const description = ' is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.';
 const descriptionAr = ' من أجود أنواع التوابل لإضافة نكهة مميزة وغنية لأطباقك. مثالي للاستخدام مع مختلف الوصفات.';
+// Function to generate unique IDs
+function generateUniqueIds(items) {
+  let idCounter = 1;
+  return items.map(item => ({
+    ...item,
+    id: `${idCounter++}`
+  }));
+}
 
 // Products Data with Wholesale/Retail Categories
-const products = [
+const rawProducts = [
   // Wholesale - Pints (24/carton)
   {
-    id: '1',
+
     name: 'Basil',
     nameAr: 'ريحان',
     description: 'Basil is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -19,7 +27,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '2',
+
     name: 'Cajun Seasoning',
     nameAr: 'كيجين',
     description: 'Cajun Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -31,7 +39,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '3',
+
     name: 'Chili Powder',
     nameAr: 'شيلي بودرة',
     description: 'Made from ground red peppers, adds vibrant color and gentle, sweet flavor to roasted meats and sauces.',
@@ -43,7 +51,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '4',
+
     name: 'Cilantro',
     nameAr: 'كزبرة مجففه',
     description: 'Cilantro is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -55,7 +63,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '5',
+
     name: 'Cinnamon Powder',
     nameAr: 'قرفة مطحونة',
     description: 'Cinnamon Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -67,7 +75,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '6',
+
     name: 'Complete Seasoning',
     nameAr: 'الخلطة المتكاملة',
     description: 'Complete Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -79,7 +87,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '7',
+
     name: 'Coriander Ground',
     nameAr: 'كزبرة مطحونة',
     description: 'Coriander Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -91,7 +99,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '8',
+
     name: 'Cumin Seed Ground',
     nameAr: 'كمون مطحون',
     description: 'Cumin Seed Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -103,7 +111,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '9',
+
     name: 'Curry Powder',
     nameAr: 'كاري بودرة',
     description: 'Curry Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -115,7 +123,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '10',
+
     name: 'Fajita Seasoning',
     nameAr: 'فاهيتا',
     description: 'FAJITA SEASONING PAIL is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -127,7 +135,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '11',
+
     name: 'Garlic Powder',
     nameAr: 'ثوم بودرة',
     description: 'Fine Ground Garlic Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -139,7 +147,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '12',
+
     name: 'Ginger Ground',
     nameAr: 'زنجبيل مطحون',
     description: 'Ginger Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -151,7 +159,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '13',
+
     name: 'Italian Seasoning',
     nameAr: 'بهار ايطالية',
     description: 'Italian Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -163,7 +171,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '14',
+
     name: 'Lime pepper',
     nameAr: 'لايم مع فلفل',
     description: 'Lime pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -175,7 +183,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '15',
+
     name: 'Mango Pepper',
     nameAr: 'منجو مع فلفل',
     description: 'Mango Pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -187,7 +195,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '16',
+
     name: 'Nutmeg Ground',
     nameAr: 'جوزة الطيب',
     description: 'Nutmeg Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -199,7 +207,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '17',
+
     name: 'Onion Granulated',
     nameAr: 'بصل مطحون',
     description: 'Onion Granulated is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -211,7 +219,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '18',
+
     name: 'Onion Powder',
     nameAr: 'بصل بودرة',
     description: 'Onion Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -223,7 +231,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '19',
+
     name: 'Orange Pepper',
     nameAr: 'برتقال مع فلفل',
     description: 'Orange Pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -235,7 +243,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '20',
+
     name: 'Oregano Whole',
     nameAr: 'اوريغانو',
     description: `Oregano Whole${description}`,
@@ -247,7 +255,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '21',
+
     name: 'Paprika',
     nameAr: 'بابريكا',
     description: `Paprika${description}`,
@@ -259,7 +267,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '22',
+
     name: 'Paprika Smoked',
     nameAr: 'بابريكا مدخن',
     description: `Paprika Smoked${description}`,
@@ -271,7 +279,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '23',
+
     name: 'Parsley Flakes',
     nameAr: 'بقدونس مجففة',
     description: `Parsley Flakes${description}`,
@@ -283,7 +291,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '24',
+
     name: 'Pepper Black Butcher Block',
     nameAr: 'فلفل اسود خشن',
     description: `Pepper Black Butcher Block${description}`,
@@ -295,7 +303,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '25',
+
     name: 'Pepper Black Ground',
     nameAr: 'فلفل اسود مطحون',
     description: `Pepper Black Ground${description}`,
@@ -307,7 +315,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '26',
+
     name: 'Pepper Black Ground Fine',
     nameAr: 'فلفل اسود ناعم',
     description: `Pepper Black Ground Fine${description}`,
@@ -319,7 +327,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '27',
+
     name: 'Pepper Pink Whole',
     nameAr: 'فلفل وردي',
     description: `Pepper Pink Whole${description}`,
@@ -331,7 +339,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '28',
+
     name: 'Pepper Red - Ground (Cayenne)',
     nameAr: 'كايين',
     description: `Pepper Red - Ground (Cayenne)${description}`,
@@ -343,7 +351,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '29',
+
     name: 'Pepper Red Crushed',
     nameAr: 'فلفل احمر مبروش',
     description: `Pepper Red Crushed${description}`,
@@ -355,7 +363,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '30',
+
     name: 'Pepper White Ground',
     nameAr: 'فلفل ابيض مطحون',
     description: `Pepper White Ground${description}`,
@@ -367,7 +375,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '31',
+
     name: 'Poultry Seasoning',
     nameAr: 'بهار دجاج',
     description: `Poultry Seasoning${description}`,
@@ -379,7 +387,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '32',
+
     name: 'Rosemary Leaves',
     nameAr: 'روزماري',
     description: `Rosemary Leaves${description}`,
@@ -391,7 +399,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '33',
+
     name: 'Rotisserie Chicken Seasoning',
     nameAr: 'دجاج مشوي',
     description: `Rotisserie Chicken Seasoning${description}`,
@@ -403,7 +411,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '34',
+
     name: 'Sazón Tropical ® w/ Annatto & Coriander',
     nameAr: 'تروبيكال',
     description: `Sazón Tropical ® w/ Annatto & Coriander${description}`,
@@ -415,7 +423,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '35',
+
     name: 'Seafood Seasoning Creole Blend',
     nameAr: 'سمك',
     description: `Seafood Seasoning Creole Blend${description}`,
@@ -427,7 +435,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '36',
+
     name: 'Seasoned Salt',
     nameAr: 'بهار بطاطا',
     description: `Seasoned Salt${description}`,
@@ -439,7 +447,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '37',
+
     name: 'Steak Seasoning',
     nameAr: 'ستيك',
     description: `Steak Seasoning${description}`,
@@ -451,7 +459,7 @@ const products = [
     packagingAr: 'علب'
   },
   {
-    id: '38',
+
     name: 'Turmeric Ground',
     nameAr: 'كركم',
     description: `Turmeric Ground${description}`,
@@ -465,7 +473,7 @@ const products = [
 
   // // Wholesale - Gallons
   {
-    id: '3',
+
     name: 'Chili Powder',
     nameAr: 'شيلي بودرة',
     description: 'Made from ground red peppers, adds vibrant color and gentle, sweet flavor to roasted meats and sauces.',
@@ -477,7 +485,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '8',
+
     name: 'Cumin Seed Ground',
     nameAr: 'كمون مطحون',
     description: 'Cumin Seed Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -489,7 +497,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '25',
+
     name: 'Pepper Black Ground',
     nameAr: 'فلفل اسود مطحون',
     description: `Pepper Black Ground${description}`,
@@ -501,7 +509,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '9',
+
     name: 'Curry Powder',
     nameAr: 'كاري بودرة',
     description: 'Curry Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -513,7 +521,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '21',
+
     name: 'Paprika',
     nameAr: 'بابريكا',
     description: `Paprika${description}`,
@@ -525,7 +533,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '20',
+
     name: 'Oregano Whole',
     nameAr: 'اوريغانو',
     description: `Oregano Whole${description}`,
@@ -537,7 +545,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '122',
+
     name: 'Fine Ground Garlic Powder',
     nameAr: 'ثوم مطحون بودرة',
     description: `Fine Ground Garlic Powder${description}`,
@@ -549,7 +557,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '17',
+
     name: 'Onion Granulated',
     nameAr: 'بصل مطحون',
     description: 'Onion Granulated is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -561,7 +569,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '17',
+
     name: 'Lemon Pepper',
     nameAr: 'ليمون مع فلفل',
     description: `Lemon Pepper${description}`,
@@ -573,7 +581,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '17',
+
     name: 'Lemon Pepper',
     nameAr: 'ليمون مع فلفل',
     description: `Lemon Pepper${description}`,
@@ -585,7 +593,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '17',
+
     name: 'CAJUN SEASONING',
     nameAr: 'كيجن',
     description: `CAJUN SEASONING${description}`,
@@ -597,7 +605,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '25',
+
     name: ' Pepper Black Ground Fine',
     nameAr: 'فلفل اسود ناعم',
     description: `Pepper Black Ground Fine${description}`,
@@ -609,7 +617,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '28',
+
     name: 'Pepper Red - Ground (Cayenne)',
     nameAr: 'كايين',
     description: `Pepper Red - Ground (Cayenne)${description}`,
@@ -621,7 +629,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '29',
+
     name: 'Pepper Red Crushed',
     nameAr: 'فلفل احمر مبروش',
     description: `Pepper Red Crushed${description}`,
@@ -633,7 +641,7 @@ const products = [
     packagingAr: 'غالون'
   },
   {
-    id: '24',
+
     name: 'Pepper Black Butcher Block',
     nameAr: 'فلفل اسود خشن',
     description: `Pepper Black Butcher Block${description}`,
@@ -648,7 +656,7 @@ const products = [
 
   // Wholesale - Buckets
   {
-    id: '7',
+
     name: 'CAJUN SEASONING PAIL',
     nameAr: 'كيجن',
     description: `CAJUN SEASONING PAIL${description}`,
@@ -660,7 +668,7 @@ const products = [
     packagingAr: 'دلو'
   },
   {
-    id: '7',
+
     name: 'FAJITA SEASONING PAIL',
     nameAr: 'فاهيتا',
     description: `FAJITA SEASONING PAIL${description}`,
@@ -672,7 +680,7 @@ const products = [
     packagingAr: 'دلو'
   },
   {
-    id: '7',
+
     name: 'Paprika',
     nameAr: 'بابريكا',
     description: `Paprika${description}`,
@@ -684,7 +692,7 @@ const products = [
     packagingAr: 'دلو'
   },
   {
-    id: '7',
+
     name: 'GRANULATED GARLIC PAIL',
     nameAr: 'ثوم مطحون',
     description: `GRANULATED GARLIC PAIL${description}`,
@@ -696,7 +704,7 @@ const products = [
     packagingAr: 'دلو'
   },
   {
-    id: '7',
+
     name: 'Paprika smoked pail',
     nameAr: 'بابريكا مدخن',
     description: `Paprika smoked pail${description}`,
@@ -708,7 +716,7 @@ const products = [
     packagingAr: 'دلو'
   },
   {
-    id: '7',
+
     name: 'GROUND BLACK PEPPER PAIL',
     nameAr: 'فلفل اسود مطحون',
     description: `GROUND BLACK PEPPER PAIL${description}`,
@@ -720,7 +728,7 @@ const products = [
     packagingAr: 'دلو'
   },
   {
-    id: '7',
+
     name: 'Onion Granulated',
     nameAr: 'بصل مطحون',
     description: `Onion Granulated${description}`,
@@ -732,7 +740,7 @@ const products = [
     packagingAr: 'دلو'
   },
   // {
-  //   id: '8',
+  //
   //   name: 'Onion Powder',
   //   nameAr: 'بودرة البصل',
   //   description: 'Concentrated onion flavor without the tears. Essential for dry rubs and adding savory depth to dishes.',
@@ -746,7 +754,7 @@ const products = [
 
   // Retail - Standard
   {
-    id: '2',
+
     name: 'Cajun Seasoning',
     nameAr: 'كيجين',
     description: 'Cajun Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -756,7 +764,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '223',
+
     name: 'Chile & Lime',
     nameAr: 'شيلي لايم',
     description: 'Chile & Lime is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -766,7 +774,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '3',
+
     name: 'Chili Powder',
     nameAr: 'شيلي بودرة',
     description: 'Made from ground red peppers, adds vibrant color and gentle, sweet flavor to roasted meats and sauces.',
@@ -776,7 +784,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '3',
+
     name: 'Chipotle Ground',
     nameAr: 'شيلي بودرة',
     description: 'Chipotle Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -786,7 +794,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '5',
+
     name: 'Cinnamon Powder',
     nameAr: 'قرفة مطحونة',
     description: 'Cinnamon Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -796,7 +804,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '5',
+
     name: 'Cinnamon Sticks',
     nameAr: 'قرفة مطحونة',
     description: 'Cinnamon Sticks is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -806,7 +814,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '6',
+
     name: 'Complete Seasoning',
     nameAr: 'الخلطة المتكاملة',
     description: 'Complete Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -816,7 +824,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '7',
+
     name: 'Coriander Ground',
     nameAr: 'كزبرة مطحونة',
     description: 'Coriander Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -826,7 +834,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '8',
+
     name: 'Cumin Seed Ground',
     nameAr: 'كمون مطحون',
     description: 'Cumin Seed Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -836,7 +844,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '9',
+
     name: 'Curry Powder',
     nameAr: 'كاري بودرة',
     description: 'Curry Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -846,7 +854,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '10',
+
     name: 'Fajita Seasoning',
     nameAr: 'فاهيتا',
     description: 'FAJITA SEASONING PAIL is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -856,7 +864,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '11',
+
     name: 'Garlic Powder',
     nameAr: 'ثوم بودرة',
     description: 'Fine Ground Garlic Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -876,7 +884,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '12',
+
     name: 'Ginger Ground',
     nameAr: 'زنجبيل مطحون',
     description: 'Ginger Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -886,7 +894,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '18',
+
     name: 'Onion Powder',
     nameAr: 'بصل بودرة',
     description: 'Onion Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -896,7 +904,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '20',
+
     name: 'Oregano Whole',
     nameAr: 'اوريغانو',
     description: `Oregano Whole${description}`,
@@ -906,7 +914,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '21',
+
     name: 'Paprika',
     nameAr: 'بابريكا',
     description: `Paprika${description}`,
@@ -916,7 +924,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '22',
+
     name: 'Paprika Smoked',
     nameAr: 'بابريكا مدخن',
     description: `Paprika Smoked${description}`,
@@ -926,7 +934,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '25',
+
     name: 'Pepper Black Ground',
     nameAr: 'فلفل اسود مطحون',
     description: `Pepper Black Ground${description}`,
@@ -936,7 +944,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '25',
+
     name: 'Pepper Ground Cayenne',
     nameAr: 'فلفل كايين',
     description: `Pepper Ground Cayenne${description}`,
@@ -946,7 +954,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '25',
+
     name: 'Pepper Ground White',
     nameAr: 'فلفل ابيض مطحون',
     description: `Pepper Ground White${description}`,
@@ -956,7 +964,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '34',
+
     name: 'Sazón Tropical ® w/ Annatto & Coriander',
     nameAr: 'تروبيكال',
     description: `Sazón Tropical ® w/ Annatto & Coriander${description}`,
@@ -966,7 +974,7 @@ const products = [
     subcategory: 'standard'
   },
   {
-    id: '36',
+
     name: 'Seasoned Salt',
     nameAr: 'بهار بطاطا',
     description: `Seasoned Salt${description}`,
@@ -978,7 +986,7 @@ const products = [
 
   // Retail - Sauces
   {
-    id: '13',
+
     name: 'CHIPOTLE MILD SAUCE',
     nameAr: 'صلصة شيبوتلي',
     description: 'CHIPOTLE MILD SAUCE is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -988,7 +996,7 @@ const products = [
     subcategory: 'sauces'
   },
   {
-    id: '13',
+
     name: 'LOUISIANA CAJUN HOT SAUCE',
     nameAr: 'صلصة كيجن حارة ',
     description: 'LOUISIANA CAJUN HOT SAUCE is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -998,7 +1006,7 @@ const products = [
     subcategory: 'sauces'
   },
   {
-    id: '13',
+
     name: 'SRIRACHA CHILI SAUCE',
     nameAr: 'صلصة سيراتشا',
     description: 'SRIRACHA CHILI SAUCE is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1010,7 +1018,7 @@ const products = [
 
   // Retail - Special
   {
-    id: '15',
+
     name: '14 Spices/ All Purpose Seasoning',
     nameAr: '14 بهار',
     description: '14 Spices/ All Purpose Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1020,7 +1028,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '15',
+
     name: 'Barbecue Spice',
     nameAr: 'بهار مشاوي',
     description: 'Barbecue Spice is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1030,7 +1038,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '15',
+
     name: 'Black Garlic Pink Salt',
     nameAr: 'ثوم اسود مع هيملايا',
     description: 'Black Garlic Pink Salt is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1040,7 +1048,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '15',
+
     name: 'Black Garlic Seasoning',
     nameAr: 'ثوم اسوم مشكل',
     description: 'Black Garlic Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1050,7 +1058,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '15',
+
     name: 'Brisket Rub Seasoning',
     nameAr: 'بهار بريسكيت',
     description: 'Brisket Rub Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1060,7 +1068,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '223',
+
     name: 'Chile & Lime',
     nameAr: 'شيلي لايم',
     description: 'Chile & Lime is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1070,7 +1078,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '223',
+
     name: 'Cilantro Lime Pepper Salt',
     nameAr: 'خليط لايم مع بقنونس وفلفل',
     description: 'Cilantro Lime Pepper Salt is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1080,7 +1088,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '6',
+
     name: 'Complete Seasoning',
     nameAr: 'الخلطة المتكاملة',
     description: 'Complete Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1090,7 +1098,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '13',
+
     name: 'Italian Seasoning',
     nameAr: 'بهار ايطالية',
     description: 'Italian Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1100,7 +1108,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '17',
+
     name: 'Lemon Pepper',
     nameAr: 'ليمون مع فلفل',
     description: `Lemon Pepper${description}`,
@@ -1110,7 +1118,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '14',
+
     name: 'Lime pepper',
     nameAr: 'لايم مع فلفل',
     description: 'Lime pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1120,7 +1128,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '15',
+
     name: 'Mango Pepper',
     nameAr: 'منجو مع فلفل',
     description: 'Mango Pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1130,7 +1138,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '19',
+
     name: 'Orange Pepper',
     nameAr: 'برتقال مع فلفل',
     description: 'Orange Pepper is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1140,7 +1148,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '20',
+
     name: 'Oregano Whole',
     nameAr: 'اوريغانو',
     description: `Oregano Whole${description}`,
@@ -1150,7 +1158,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '24',
+
     name: 'Pepper Black Butcher Block',
     nameAr: 'فلفل اسود خشن',
     description: `Pepper Black Butcher Block${description}`,
@@ -1160,7 +1168,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '31',
+
     name: 'Poultry Seasoning',
     nameAr: 'بهار دجاج',
     description: `Poultry Seasoning${description}`,
@@ -1170,7 +1178,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '31',
+
     name: 'Red Lobster - Seafood Seasoning',
     nameAr: 'بهار دجاج',
     description: `Red Lobster - Seafood Seasoning${description}`,
@@ -1180,7 +1188,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '31',
+
     name: 'Sazon with Coriander and Annatto',
     nameAr: 'سيزون',
     description: `Sazon with Coriander and Annatto${description}`,
@@ -1190,7 +1198,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '35',
+
     name: 'Seafood Seasoning Creole Blend',
     nameAr: 'سمك',
     description: `Seafood Seasoning Creole Blend${description}`,
@@ -1200,7 +1208,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '37',
+
     name: 'Steak Seasoning',
     nameAr: 'ستيك',
     description: `Steak Seasoning${description}`,
@@ -1210,7 +1218,7 @@ const products = [
     subcategory: 'special'
   },
   {
-    id: '37',
+
     name: 'Sumac',
     nameAr: 'سماق',
     description: `Sumac${description}`,
@@ -1222,7 +1230,7 @@ const products = [
 
   // // Retail - Economy
   {
-    id: '3',
+
     name: 'Chili Powder',
     nameAr: 'شيلي بودرة',
     description: 'Made from ground red peppers, adds vibrant color and gentle, sweet flavor to roasted meats and sauces.',
@@ -1232,7 +1240,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '6',
+
     name: 'Complete Seasoning',
     nameAr: 'الخلطة المتكاملة',
     description: 'Complete Seasoning is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1242,7 +1250,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '8',
+
     name: 'Cumin Seed Ground',
     nameAr: 'كمون مطحون',
     description: 'Cumin Seed Ground is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1252,7 +1260,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '9',
+
     name: 'Curry Powder',
     nameAr: 'كاري بودرة',
     description: 'Curry Powder is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1262,7 +1270,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '10',
+
     name: 'Fajita Seasoning',
     nameAr: 'فاهيتا',
     description: 'FAJITA SEASONING PAIL is a premium spice that adds a rich and unique flavor to your dishes. Perfect for various recipes.',
@@ -1272,7 +1280,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '20',
+
     name: 'Oregano Whole',
     nameAr: 'اوريغانو',
     description: `Oregano Whole${description}`,
@@ -1282,7 +1290,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '23',
+
     name: 'Parsley Flakes',
     nameAr: 'بقدونس مجففة',
     description: `Parsley Flakes${description}`,
@@ -1292,7 +1300,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '29',
+
     name: 'Pepper Red Crushed',
     nameAr: 'فلفل احمر مبروش',
     description: `Pepper Red Crushed${description}`,
@@ -1302,7 +1310,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '25',
+
     name: 'Pepper Black Ground',
     nameAr: 'فلفل اسود مطحون',
     description: `Pepper Black Ground${description}`,
@@ -1312,7 +1320,7 @@ const products = [
     subcategory: 'economy'
   },
   {
-    id: '33',
+
     name: 'Rotisserie Chicken Seasoning',
     nameAr: 'دجاج مشوي',
     description: `Rotisserie Chicken Seasoning${description}`,
@@ -1324,7 +1332,7 @@ const products = [
 
   // Retail - Mexican Line
   {
-    id: '21',
+
     name: 'Ancho',
     nameAr: 'أنشو',
     description: `Ancho${description}`,
@@ -1334,7 +1342,7 @@ const products = [
     subcategory: 'mexican'
   },
   {
-    id: '21',
+
     name: 'Arbol',
     nameAr: 'أربول',
     description: `Arbol${description}`,
@@ -1344,7 +1352,7 @@ const products = [
     subcategory: 'mexican'
   },
   {
-    id: '21',
+
     name: 'California',
     nameAr: 'كاليفورنيا',
     description: `California${description}`,
@@ -1354,7 +1362,7 @@ const products = [
     subcategory: 'mexican'
   },
   {
-    id: '21',
+
     name: 'Chipotle',
     nameAr: 'كاليفورنيا',
     description: `Chipotle${description}`,
@@ -1364,7 +1372,7 @@ const products = [
     subcategory: 'mexican'
   },
   {
-    id: '21',
+
     name: 'Guajillo',
     nameAr: 'غواخيلو',
     description: `Guajillo${description}`,
@@ -1374,7 +1382,7 @@ const products = [
     subcategory: 'mexican'
   },
   {
-    id: '21',
+
     name: 'Japones (Red Chili Pepper)',
     nameAr: 'الياباني (فلفل أحمر حار)',
     description: `Japones (Red Chili Pepper)${description}`,
@@ -1384,7 +1392,7 @@ const products = [
     subcategory: 'mexican'
   },
   {
-    id: '21',
+
     name: 'New Mexico',
     nameAr: 'نيو مكسيكو',
     description: `New Mexico${description}`,
@@ -1394,7 +1402,7 @@ const products = [
     subcategory: 'mexican'
   },
   {
-    id: '21',
+
     name: 'Pasilla (Negro Largo)',
     nameAr: 'باسيا (نيغرو لارغو)',
     description: `Pasilla (Negro Largo)${description}`,
@@ -1405,7 +1413,7 @@ const products = [
   },
   // Additional Standard Products
   // {
-  //   id: '27',
+  //
   //   name: 'Poultry Seasoning',
   //   nameAr: 'توابل الدواجن',
   //   description: 'Aromatic blend of sage, thyme, rosemary, and marjoram. Enhances chicken and turkey with classic savory notes.',
@@ -1415,7 +1423,7 @@ const products = [
   //   subcategory: 'standard'
   // },
   // {
-  //   id: '28',
+  //
   //   name: 'Canadian Steak Seasoning',
   //   nameAr: 'توابل الستيك الكندية',
   //   description: 'Bold blend of coarse spices with black pepper, dill seed, and garlic. Creates savory crust on steaks.',
@@ -1425,6 +1433,7 @@ const products = [
   //   subcategory: 'standard'
   // }
 ];
+const products = generateUniqueIds(rawProducts);
 
 // Global variables
 let currentLanguage = 'en';
@@ -1440,6 +1449,31 @@ document.addEventListener('DOMContentLoaded', function () {
   // Setup search functionality
   const searchInput = document.getElementById('searchInput');
   searchInput.addEventListener('input', handleSearch);
+
+
+  const productsGrid = document.getElementById('productsGrid');
+
+  function renderProducts(filteredProducts) {
+    if (productsGrid) {
+      productsGrid.innerHTML = ''; // Clear previous products
+      if (filteredProducts.length > 0) {
+        filteredProducts.forEach(product => {
+          const productCard = generateProductCard(product);
+          productsGrid.innerHTML += productCard;
+        });
+      } else {
+        productsGrid.innerHTML = `
+                    <div class="col-12 text-center">
+                        <p data-translate="no_products">No products found.</p>
+                        <p data-translate="try_different">Try a different category or search term.</p>
+                    </div>
+                `;
+      }
+    }
+  }
+
+  // Call renderProducts with the initial products data
+  renderProducts(products);
 });
 
 // Filter products by category and subcategory
@@ -1530,24 +1564,28 @@ function updateButtonStates(category, subcategory) {
 }
 
 // Render products to the grid
-function renderProducts(productsToRender) {
-  const grid = document.getElementById('productsGrid');
 
-  if (productsToRender.length === 0) {
-    grid.innerHTML = `
-      <div class="col-12">
-        <div class="empty-state">
-          <i class="fas fa-search"></i>
-          <h4 class="mt-3" data-translate="no_products">No products found</h4>
-          <p data-translate="try_different">Try a different category or search term</p>
-        </div>
-      </div>
-    `;
-    return;
+function renderProducts(filteredProducts) {
+  if (productsGrid) {
+    productsGrid.innerHTML = ''; // Clear previous products
+    if (filteredProducts.length > 0) {
+      filteredProducts.forEach(product => {
+        const productCard = generateProductCard(product);
+        productsGrid.innerHTML += productCard;
+      });
+    } else {
+      productsGrid.innerHTML = `
+            <div class="col-12 text-center">
+                <p data-translate="no_products">No products found.</p>
+                <p data-translate="try_different">Try a different category or search term.</p>
+            </div>
+        `;
+    }
   }
-
-  grid.innerHTML = productsToRender.map(product => createProductCard(product)).join('');
 }
+
+// Initial render
+// renderProducts(products);
 
 // Create individual product card HTML
 function createProductCard(product) {
@@ -1590,13 +1628,36 @@ function createProductCard(product) {
         
         <div class="card-body text-center">
           <h5 class="card-title ${isArabic ? 'font-cairo' : ''}">${name}</h5>
-          <p class="card-text ${isArabic ? 'font-cairo' : ''}">${description}</p>
+        
           
-       
+       <a class="t" href="#" aria-label="5 Oz LEARN MORE" data-uw-rm-vglnk="" uw-rm-vague-link-id="#" data-uw-rm-brl="PR" data-uw-original-href="#">  <span class="component-text">LEARN MORE</span> </a>
+
         </div>
       </div>
     </div>
   `;
+  //?  <p class="card-text ${isArabic ? 'font-cairo' : ''}">${description}</p>
+}
+
+
+function generateProductCard(product) {
+  const isArabic = document.documentElement.lang === "ar";
+  const learnMore = isArabic ? "شوف أكتر" : "Learn More";
+  const name = isArabic ? product.nameAr : product.name;
+  const description = isArabic ? product.descriptionAr : product.description;
+  const packaging = isArabic ? product.packagingAr : product.packaging;
+
+  return `
+      <div class="col-lg-4 col-md-6 mb-4 " id="${product.id}">
+        <div class="card h-100 product-card radius">
+          <img src="${product.image}" class="card-img-top" alt="${name}" />
+            <h5 class="card-title" data-translate="${product.name}">${name}</h5>
+          <div class="card-body text-center">
+            <a href="detail_product.html?id=${product.id}" class="t">${learnMore}</a>
+          </div>
+        </div>
+      </div>
+    `;
 }
 
 // Get subcategory label based on language
@@ -1632,25 +1693,49 @@ function updateProductCount(count) {
   const countElement = document.getElementById('productCount');
   const isArabic = currentLanguage === 'ar';
 
-  if (isArabic) {
-    countElement.textContent = `عرض ${count} من ${products.length} منتج`;
-  } else {
-    countElement.textContent = `Showing ${count} of ${products.length} products`;
-  }
+  // if (isArabic) {
+  //   countElement.textContent = `عرض ${count} من ${products.length} منتج`;
+  // } else {
+  //   countElement.textContent = `Showing ${count} of ${products.length} products`;
+  // }
 }
 
-// Language change functionality
+// Function to change language
 function changeLanguage(lang) {
-  currentLanguage = lang;
-  document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  // Store selected language
+  localStorage.setItem("selectedLanguage", lang);
 
-  // Update body class for Arabic
-  if (lang === 'ar') {
-    document.body.classList.add('font-cairo');
-  } else {
-    document.body.classList.remove('font-cairo');
-  }
+  // Update HTML lang and dir attributes
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+  // Update all translatable elements
+  const translatableElements = document.querySelectorAll("[data-translate]");
+
+  translatableElements.forEach((element) => {
+    const key = element.getAttribute("data-translate");
+    if (translations[lang] && translations[lang][key]) {
+      if (element.tagName === "INPUT" && element.type === "submit") {
+        element.value = translations[lang][key];
+      } else {
+        element.innerHTML = translations[lang][key];
+      }
+    }
+  });
+
+  // Update active language button
+  document.querySelectorAll(".language-switcher .btn").forEach((btn) => {
+    btn.classList.remove("btn-primary");
+    btn.classList.add("btn-outline-primary");
+    if (
+      (lang === "en" && btn.textContent.trim() === "EN") ||
+      (lang === "ar" && btn.textContent.trim() === "العربية")
+    ) {
+      btn.classList.remove("btn-outline-primary");
+      btn.classList.add("btn-primary");
+    }
+  });
+
 
   // Re-render products with new language
   renderProducts(filteredProducts);
@@ -1660,6 +1745,17 @@ function changeLanguage(lang) {
   updateTranslations(lang);
 }
 
+
+
+// Initialize language on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+
+  // Set initial language without triggering event
+  changeLanguage(savedLanguage);
+});
+
+
 // Update translations (basic implementation)
 function updateTranslations(lang) {
   const translations = {
@@ -1667,6 +1763,7 @@ function updateTranslations(lang) {
       nav_home: 'Home',
       nav_about: 'About',
       nav_products: 'Products',
+      nav_shop: 'Shop',
       nav_contact: 'Contact',
       spices_page_title: 'Our Premium Spice Collection',
       spices_page_subtitle: 'Discover our complete range of premium spices and seasonings, carefully sourced from the finest farms around the world',
@@ -1694,6 +1791,7 @@ function updateTranslations(lang) {
       nav_home: 'الرئيسية',
       nav_about: 'حول',
       nav_products: 'المنتجات',
+      nav_shop: 'المتجر',
       nav_contact: 'اتصل بنا',
       spices_page_title: 'مجموعة التوابل المميزة',
       spices_page_subtitle: 'اكتشف مجموعتنا الكاملة من التوابل والبهارات المميزة، مختارة بعناية من أفضل المزارع حول العالم',

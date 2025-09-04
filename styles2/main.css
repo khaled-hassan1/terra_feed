@@ -10,9 +10,10 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Cairo", sans-serif;
   line-height: 1.6;
-  color: #374151;
+  color: var(--text-dark);
+  background-color: #fff9ed !important;
 }
 
 .font-cairo {
@@ -54,7 +55,7 @@ body {
 
 .category-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .category-btn.active {
@@ -87,11 +88,40 @@ body {
   overflow: hidden;
   transition: all 0.3s ease;
   height: 100%;
+
 }
 
+.radius {
+  border-radius: 50px 0 50px 0;
+
+}
+
+.t {
+  background: transparent;
+  background-color: #fecf07;
+  padding: 12px 24px;
+  border-radius: 12px 0 12px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 12px;
+  font-size: 12px;
+
+}
+
+.t:hover {
+  background-color: #e4ab11;
+}
+[lang="ar"] .t{
+    font-size: 18px;
+  font-family: "Cairo", sans-serif;
+}
 .product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .product-card .card-img-top {
@@ -105,14 +135,16 @@ body {
 }
 
 .product-card .card-body {
-  padding: 1.5rem;
+  padding: 0 0 1.5rem;
 }
 
 .product-card .card-title {
   font-weight: 600;
   font-size: larger;
   color: var(--dark-color);
-  margin-bottom: 0.75rem;
+  margin: 0.75rem;
+  padding-top: 25px;
+
 }
 
 .product-card .card-text {
@@ -208,6 +240,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -242,17 +275,43 @@ body {
   .hero-section {
     padding: 3rem 0;
   }
-  
+
   .hero-section h1 {
     font-size: 2.5rem;
   }
-  
+
   .subcategory-buttons {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-  
+
   .product-card .card-body {
     padding: 1rem;
   }
+}
+
+/* Custom styles for product details page */
+.product-name-style {
+  font-family: 'Cairo', sans-serif;
+  /* استخدم خط Cairo للاسماء العربية */
+  color: #333;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-desc-style {
+  font-family: 'Poppins', sans-serif;
+  color: #666;
+  line-height: 1.8;
+  font-weight: 400;
+
+}
+
+/* Specific styles for Arabic content */
+[dir="rtl"] .product-name-style {
+  font-family: 'Amiri', sans-serif;
+}
+
+[dir="rtl"] .product-desc-style {
+  font-family: 'Amiri', sans-serif;
 }

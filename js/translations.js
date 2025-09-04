@@ -14,7 +14,7 @@ const translations = {
     nav_recipes: "Recipes",
     nav_blog: "Blog",
     nav_wholesale: "Wholesale",
-
+    nav_shop: 'Shop',
     // Hero Section
     hero_title: "Premium Spices from Nature's Garden",
     hero_subtitle:
@@ -24,6 +24,8 @@ const translations = {
 
     // Features
     feature_organic_title: "Selected Organic Spices",
+    learn_more: "Learn More",
+
     feature_organic_desc:
       "Some of our products are certified organic and free from harmful chemicals or pesticides.",
     feature_global_title: "Global Sourcing",
@@ -207,10 +209,10 @@ const translations = {
     spices_page_title: "Our Premium Spices",
     spices_page_subtitle:
       "Discover the world of flavors with our carefully selected spices",
-      // Marketing Content
+    // Marketing Content
     marketing_tagline: "Quality that satisfies, a taste that entices.",
-   
-    },
+
+  },
 
   ar: {
     // Name Site
@@ -226,6 +228,8 @@ const translations = {
     nav_recipes: "الوصفات",
     nav_blog: "المدونة",
     nav_wholesale: "الجملة",
+    nav_shop: 'المتجر',
+
 
     // Hero Section
     hero_title: "توابل فاخرة من حديقة الطبيعة",
@@ -417,9 +421,10 @@ const translations = {
     spices_page_title: "توابلنا الفاخرة",
     spices_page_subtitle: "اكتشف عالم النكهات مع توابلنا المختارة بعناية",
 
-     // محتوى تسويقي جديد
+    // محتوى تسويقي جديد
     marketing_tagline: "جودة تغنيك وطعم يغريك",
-  
+    learn_more: "شوف أكتر",
+
   },
 };
 
@@ -463,31 +468,7 @@ function changeLanguage(lang) {
   updateFormPlaceholders(lang);
 }
 
-function updateFormPlaceholders(lang) {
-  const placeholders = {
-    en: {
-      name: "Your Name",
-      email: "your.email@example.com",
-      subject: "Subject",
-      message: "Your message here...",
-    },
-    ar: {
-      name: "اسمك",
-      email: "your.email@example.com",
-      subject: "الموضوع",
-      message: "رسالتك هنا...",
-    },
-  };
 
-  if (placeholders[lang]) {
-    Object.keys(placeholders[lang]).forEach((key) => {
-      const element = document.getElementById(key);
-      if (element) {
-        element.placeholder = placeholders[lang][key];
-      }
-    });
-  }
-}
 
 // Initialize language on page load
 document.addEventListener("DOMContentLoaded", function () {
